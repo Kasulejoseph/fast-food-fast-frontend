@@ -87,6 +87,15 @@ label a:hover{
 #logini{
     display: none;
 }
+#danger{
+    color: red;
+}
+#danger2{
+    color: red;
+}
+#success{
+    color: #1c8c11;
+}
 
 
 
