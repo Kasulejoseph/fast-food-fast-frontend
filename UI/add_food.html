@@ -14,12 +14,13 @@
 <header>
 <div id="nav"><h1><span id ="highlight">F</span>AST 
     <span id ="highlight">F</span>OOD <span id ="highlight">F</span>AST</h1></div>
+    <div class="search">
+            <input type="text" placeholder="search here..."></div>
     <div id = "menu">
     <ul>
-        <li><div class="search">
-            <input type="text" placeholder="search here...">
+        <li>
             <li><a href="home.html">Home</a></li>
-            <li><a href="menu.html">OnMenu</a></li>
+            <li><a id ="onmenu" href="menu.html">OnMenu</a></li>
             <li><a href="add_food.html">Admin</a></li>
             <li><a href="index.html">Logout</a></li>
     </ul>
@@ -36,16 +37,20 @@
             <li><a href="menu.html">Menu</a></li>
         </ul>
     </div>
+    <div id = "danger"></div>
+    <div id = "success"></div>
 <h1> Add Dish </h1>
-<form class ="add_form" action="edit.html">
-    <label>Dish Name: </label><input type="text" name="name" ><p></p>
-    <label>Cost: </label><input type="text" name="name" ><p></p>  
-    <label>Description: </label><textarea name="desc" id="desc" cols="80" rows="10"></textarea>
+<form id ="add_form">
+    <label>Dish Name: </label><input type="text" id = "dish" name="name" ><p></p>
+    <label>Cost: </label><input id = "price" type="text" name="name" ><p></p>  
+    <label>Description: </label><textarea id = "desc" name="desc" id="desc" cols="80" rows="10"></textarea>
     <p></p>
     <label>Upload Image: </label> <input type="file" name="image" id="image"><p></p>
     <input type="submit" value="Add food" id ="submit">
+</form>
 </div>
 </div>
 </section>
+<script src = "./javascript/menu.js"></script>
 </body>
 </html>
