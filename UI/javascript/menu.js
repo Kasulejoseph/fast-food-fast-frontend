@@ -2,6 +2,7 @@ document.getElementById('add_form').addEventListener
 ('submit', menuPost);
 let success = document.getElementById("success");
 let danger = document.getElementById("danger");
+const url = "http://127.0.0.1:5000/api/v1/menu";
 
 function json(response) {
     return response.json()
@@ -18,7 +19,7 @@ function menuPost(e){
         price: Number(price),
         "description": desc
     }
-    fetch('http://127.0.0.1:5000/api/v1/menu', {
+    fetch(url, {
         method: 'post',
         headers: {
             'Accept': 'application/json, text/plain, */*',
