@@ -32,7 +32,7 @@ function registerUser(e){
         "password": password,
         "email": email,
         "location": address,
-        "role": "admin"     
+        "role": "user"     
     }
     fetch('http://127.0.0.1:5000/api/v1/auth/signup',{
         method: 'post',
@@ -90,6 +90,7 @@ function loginUser(e){
         }
         else{
             window.sessionStorage.setItem("token", response.auth_token)
+            window.sessionStorage.setItem("username", username)
             let token = window.sessionStorage.getItem("token")
             let tokenDecoded = jwtToken(token)
             let role = tokenDecoded.role
