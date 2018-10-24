@@ -2,8 +2,6 @@ document.getElementById('add_form').addEventListener
 ('submit', menuPost);
 let success = document.getElementById("success");
 let danger = document.getElementById("danger");
-// let aa = document.getElementById("cost");
-
 function json(response) {
     return response.json()
 }
