@@ -8,7 +8,6 @@ function json(response) {
     return response.json()
 }
 
-
 function menuPost(e){
     e.preventDefault();
     let dish = document.getElementById("dish").value;
@@ -20,7 +19,7 @@ function menuPost(e){
         price: Number(price),
         "description": desc
     }
-    fetch("http://127.0.0.1:5000/api/v1/menu", {
+    fetch("https://fast-food-fast-db.herokuapp.com/api/v1/menu", {
         method: 'post',
         headers: {
             'Accept': 'application/json, text/plain, */*',

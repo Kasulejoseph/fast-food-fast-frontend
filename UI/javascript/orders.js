@@ -22,7 +22,7 @@ data= `
 function orderAll(e){
     e.preventDefault();
     let token = window.sessionStorage.getItem("token")
-    fetch("http://127.0.0.1:5000/api/v1/users", {
+    fetch("https://fast-food-fast-db.herokuapp.com/api/v1/users", {
     method: 'get',
     headers: {
         'Authorization': 'Bearer ' + token,
@@ -45,7 +45,7 @@ function orderAll(e){
 
 function call_u(res){
     let token = window.sessionStorage.getItem("token")
-    fetch("http://127.0.0.1:5000/api/v1/orders/", {
+    fetch("https://fast-food-fast-db.herokuapp.com/api/v1/orders/", {
         method: 'get',
         headers: {
             'Authorization': 'Bearer ' + token,
@@ -90,7 +90,7 @@ function orderById(res, order_id){
     let token = window.sessionStorage.getItem("token");
     console.log(order_id)
     if (token){
-        fetch(`http://127.0.0.1:5000/api/v1/orders/${order_id}`, {
+        fetch(`https://fast-food-fast-db.herokuapp.com/api/v1/orders/${order_id}`, {
             method: 'get',
             headers: {
                 'Authorization': 'Bearer ' + token,

@@ -34,7 +34,7 @@ function registerUser(e){
         "location": address,
         "role": "user"     
     }
-    fetch('http://127.0.0.1:5000/api/v1/auth/signup',{
+    fetch('https://fast-food-fast-db.herokuapp.com/api/v1/auth/signup',{
         method: 'post',
         headers: {
             'Accept': 'application/json, text/plain, */*',
@@ -71,7 +71,7 @@ function loginUser(e){
         username:username,
         password:password
     }
-    fetch('http://127.0.0.1:5000/api/v1/auth/login',
+    fetch('https://fast-food-fast-db.herokuapp.com/api/v1/auth/login',
     {
         method: 'post',
         headers: {

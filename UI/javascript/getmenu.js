@@ -5,7 +5,7 @@ function json(response) {
 }
 function menuGet(e){
     e.preventDefault();
-    fetch("http://127.0.0.1:5000/api/v1/menu",{
+    fetch("https://fast-food-fast-db.herokuapp.com/api/v1/menu",{
         method: 'get',
     })
     .then(json)
@@ -34,7 +34,7 @@ function menuGet(e){
 function add(ID){
     let token = window.sessionStorage.getItem("token")
     console.log(ID)
-    fetch("http://127.0.0.1:5000/api/v1/users/orders/",{
+    fetch("https://fast-food-fast-db.herokuapp.com/api/v1/orders/",{
         method: "post",
         headers: {
             'Authorization': 'Bearer ' + token,
