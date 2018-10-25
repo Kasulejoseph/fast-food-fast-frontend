@@ -76,9 +76,9 @@ function call_u(res){
                     <td>`+order_list.location+`</td>
                     <td>shs.`+order_list.price+`k</td>
                     <td>24/03/2018</td>
-                    <td><button class="btn_edit" >Accept</button></td>
-                    <td><button class="btn_delete" >Decline</button></td>
-                    <td><input type="checkbox" id ="checkbox">
+                    <td id="btn_edit"><button onclick ="accept(${order_list.order_id})" class="btn_edit" >Accept</button></td>
+                    <td id="btn_delete"><button onclick ="decline(${order_list.order_id})" class="btn_delete" >Decline</button></td>
+                    <td id = "checked"><input onclick="complete(${order_list.order_id})" type="checkbox" id ="checkbox">
                         <span class="checkmark"></span></td>
                         
                 </tr>
@@ -140,4 +140,64 @@ function orderById(res, order_id){
 
     })
 }
-}    
+}
+
+function accept(order_id){
+    let token = window.sessionStorage.getItem("token");
+    console.log(order_id)
+    if (token){
+        fetch(`https://fast-food-fast-db.herokuapp.com/api/v1/orders/${order_id}`, {
+            method: 'put',
+            headers: {
+                'Authorization': 'Bearer ' + token,
+                'Accept': 'application/json, text/plain, */*',
+                "Content-type": "application/json",
+            },
+            mode: 'cors',
+            body: JSON.stringify({'status': "processing"})
+        })
+        document.getElementById("btn_edit").innerHTML =`
+        <td id="btn_edit"><button class="btn_edit" >Accepted</button></td>`
+        
+    }
+
+}
+
+function decline(order_id){
+    let token = window.sessionStorage.getItem("token");
+    console.log(order_id)
+    if (token){
+        fetch(`https://fast-food-fast-db.herokuapp.com/api/v1/orders/${order_id}`, {
+            method: 'put',
+            headers: {
+                'Authorization': 'Bearer ' + token,
+                'Accept': 'application/json, text/plain, */*',
+                "Content-type": "application/json",
+            },
+            mode: 'cors',
+            body: JSON.stringify({'status': "cancelled"})
+        })
+        document.getElementById("btn_delete").innerHTML = `
+        <td id="btn_delete"><button class="btn_delete" >Declined</button></td>`;
+    }
+
+}
+
+function complete(order_id){
+    let token = window.sessionStorage.getItem("token");
+    console.log(order_id)
+    if (token){
+        fetch(`https://fast-food-fast-db.herokuapp.com/api/v1/orders/${order_id}`, {
+            method: 'put',
+            headers: {
+                'Authorization': 'Bearer ' + token,
+                'Accept': 'application/json, text/plain, */*',
+                "Content-type": "application/json",
+            },
+            mode: 'cors',
+            body: JSON.stringify({'status': "complete"})
+        })
+    }
+
+}
+
