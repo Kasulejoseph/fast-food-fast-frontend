@@ -32,7 +32,7 @@ function registerUser(e){
         "password": password,
         "email": email,
         "location": address,
-        "role": "user"     
+        "role": "admin"     
     }
     fetch('https://fast-food-fast-db.herokuapp.com/api/v1/auth/signup',{
         method: 'post',

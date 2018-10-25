@@ -34,7 +34,7 @@ function menuGet(e){
 function add(ID){
     let token = window.sessionStorage.getItem("token")
     console.log(ID)
-    fetch("https://fast-food-fast-db.herokuapp.com/api/v1/orders/",{
+    fetch("https://fast-food-fast-db.herokuapp.com/api/v1/users/orders/",{
         method: "post",
         headers: {
             'Authorization': 'Bearer ' + token,

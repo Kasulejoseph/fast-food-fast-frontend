@@ -56,6 +56,12 @@ function call_u(res){
     })
     .then(json)
     .then((response) => {
+        if (response['error']){
+            data += `</table>`
+            message= `<h2>${response['error']}</h2`
+            document.getElementById("data").innerHTML = data + message
+        }
+        console.log(response)
         let order_list = {}
         let meal = []
         res['users'].forEach(user => {
