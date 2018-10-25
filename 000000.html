@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" lang="en-us" content="delicious, online,food,order,fast">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+     maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <meta name="HandheldFriendly" content ="true">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Fast Food</title>
+</head>
+<body>
+<section>
+<div class="container">
+<div class="intro">
+    <h1>Fast Food Fast</h1><p>
+        <h3>We offer the fastest food delivery service<br>
+            Our meals are tasty, appetizing, scrumptious, yummy,<br>
+            luscious, delectable, mouth-watering,<br>
+            appealing, enchanting, charming
+        </h3>
+    </p><p>
+        <h3>
+            Join the world’s food delivery service<br>
+            Register to get started
+        </h3>
+    </p>
+</div></div>
+    <div id="register">
+        
+        <form action="login.html" id="form">
+                <div class="avatar">
+                        <img src = "image/avat3.png">
+                    </div>
+            <input type="text" id = "username" name="name" placeholder="Your Username" required> <p></p>
+            <input type="email" id = "email" name="email" placeholder="youremail@gmail.com" required> <p></p> 
+            <input type="text" id = "address" name="name" placeholder="Home Address"> <p></p>
+            <input type="password" id = "password" placeholder="password" required><p></p>
+            <input type="password" id = "confirm" placeholder="confirm password" required><p></p>
+            <input type="submit" value="Sign Up" id ="submit">
+            <div id="output"> </div>
+            <div id="label"><label>Have an account?<a onclick = "login()" > Log in</a></label></div>
+            <div id="danger"></div>
+            <div id="success"></div>
+        </form>
+        <div id = "logini">
+                <div class="avatar">
+                        <img src = "image/avat3.png">
+                    </div>
+                <form id="login_form">
+                    <input type="text" id="login_username" name="name" placeholder="Username" required> <p></p>
+                    <input type="password" id="login_password" placeholder="password" required><p></p>
+                    <input type="submit" value="Log In" id ="submit2">
+                    <div id= "label"><label>Don't have an account? <a href="index.html">Register</a></label></div>
+                    <div id="danger2"></div>
+                    <div id="success"></div>
+                </form>
+        </div>
+</div>
+</section> 
+<script src="./javascript/admin.js"></script>
+</body>
+</html>
