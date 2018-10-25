@@ -3,6 +3,7 @@ window.addEventListener
 function json(response) {
     return response.json()
 }
+// get items on menu
 function menuGet(e){
     e.preventDefault();
     fetch("https://fast-food-fast-db.herokuapp.com/api/v1/menu",{
@@ -30,7 +31,7 @@ function menuGet(e){
 
     })
 }
-
+// create an order
 function add(ID){
     let token = window.sessionStorage.getItem("token")
     console.log(ID)

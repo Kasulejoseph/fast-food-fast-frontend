@@ -24,6 +24,7 @@ data= `
         <th>Completed</th>
     </tr>
     `
+// returns all user details registered
 function orderAll(e){
     e.preventDefault();
     let token = window.sessionStorage.getItem("token")
@@ -47,7 +48,7 @@ function orderAll(e){
         
     })
 }
-
+// fetch all orders made by different users
 function call_u(res){
     let token = window.sessionStorage.getItem("token")
     fetch("https://fast-food-fast-db.herokuapp.com/api/v1/orders/", {
@@ -97,7 +98,7 @@ function call_u(res){
     document.getElementById("data").innerHTML = data
 });
 }
-
+// fetch a specific order by its id
 function orderById(res, order_id){
     let token = window.sessionStorage.getItem("token");
     console.log(order_id)
@@ -133,9 +134,9 @@ function orderById(res, order_id){
                         <td>`+order_list.location+`</td>
                         <td>shs.`+order_list.price+`k</td>
                         <td>24/03/2018</td>
-                        <td><button class="btn_edit" >Accept</button></td>
-                        <td><button class="btn_delete" >Decline</button></td>
-                        <td><input type="checkbox" id ="checkbox">
+                        <td id="btn_edit"><button onclick ="accept(${order_list.order_id})" class="btn_edit" >Accept</button></td>
+                        <td id="btn_delete"><button onclick ="decline(${order_list.order_id})" class="btn_delete" >Decline</button></td>
+                        <td id = "checked"><input onclick="complete(${order_list.order_id})" type="checkbox" id ="checkbox">
                             <span class="checkmark"></span></td>
                     </tr>
                     `
@@ -149,7 +150,7 @@ function orderById(res, order_id){
     })
 }
 }
-
+// update order with processing
 function accept(order_id){
     let token = window.sessionStorage.getItem("token");
     console.log(order_id)
@@ -170,7 +171,7 @@ function accept(order_id){
     }
 
 }
-
+// update order status with cancelled
 function decline(order_id){
     let token = window.sessionStorage.getItem("token");
     console.log(order_id)
@@ -190,7 +191,7 @@ function decline(order_id){
     }
 
 }
-
+// update order status with complete
 function complete(order_id){
     let token = window.sessionStorage.getItem("token");
     console.log(order_id)
