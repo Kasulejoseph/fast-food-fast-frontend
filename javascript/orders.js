@@ -4,6 +4,11 @@ function json(response) {
     return response.json()
 }
 let order_id = document.getElementById("search").value;
+order_id = Number(order_id)
+// if (typeof(order_id) === 'string'){
+//     document.getElementById("danger").innerHTML = `<h2>Input should be a number value</h2>`
+//     console.log(order_id)
+// }
 let data = ''
 data= `
     <table>
@@ -63,11 +68,12 @@ function call_u(res){
         }
         console.log(response)
         let order_list = {}
-        let meal = []
+        let date = window.sessionStorage.getItem("date")
         res['users'].forEach(user => {
             response['Orders'].forEach(order => {
                 if (user.user_id == order.menu_id){
                     order_list = Object.assign({},user, order)
+                    date = date
                     data += `
                     <tr>
                     <td >`+order_list.order_id+`</td>
@@ -75,7 +81,7 @@ function call_u(res){
                     <td>`+order_list.username+`</td>
                     <td>`+order_list.location+`</td>
                     <td>shs.`+order_list.price+`k</td>
-                    <td>24/03/2018</td>
+                    <td>`+date+`</td>
                     <td id="btn_edit"><button onclick ="accept(${order_list.order_id})" class="btn_edit" >Accept</button></td>
                     <td id="btn_delete"><button onclick ="decline(${order_list.order_id})" class="btn_delete" >Decline</button></td>
                     <td id = "checked"><input onclick="complete(${order_list.order_id})" type="checkbox" id ="checkbox">
@@ -108,9 +114,11 @@ function orderById(res, order_id){
         .then(json)
         .then((result) => {
             if (result.status == 'Failed'){
-                data += `
-                <tr >${result.message}</tr>
+                data += `</table>`
+                message = `
+                <h2>No order item found for that id</h2>
                 `
+                document.getElementById("data").innerHTML = data + message
             }
             else{
                 res['users'].forEach(user => {
@@ -134,10 +142,10 @@ function orderById(res, order_id){
                     }
               
         })
-    }
         data += `</table>`
-            document.getElementById("data").innerHTML = data
+        document.getElementById("data").innerHTML = data
 
+    }
     })
 }
 }

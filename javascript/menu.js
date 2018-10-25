@@ -10,7 +10,6 @@ function menuPost(e){
     e.preventDefault();
     let dish = document.getElementById("dish").value;
     let price = document.getElementById("price").value;
-    let intPrice = parseInt(price)
     let desc = document.getElementById("desc").value;
     let menu = {
         "meal": dish,

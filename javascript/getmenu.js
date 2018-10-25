@@ -47,6 +47,8 @@ function add(ID){
     .then(json)
     .then((result) => {
         if (result.status == "Success"){
+            let today = new Date().toLocaleDateString()
+            window.sessionStorage.setItem("date", today)
             document.getElementById("welcome").innerHTML;
             console.log(result);
         }

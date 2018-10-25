@@ -154,11 +154,13 @@ textarea {
     width: 50%;
     margin-left: 20%;
 }
-#danger{
-    color:  red;
-    width: 50%;
+#danger {
+    font-size: 30px;
+    color: #e8491d;
     margin-left: 20%;
+
 }
+
 
 /* media query */
 @media (min-width:640px) {body {font-size: 1rem;}}
