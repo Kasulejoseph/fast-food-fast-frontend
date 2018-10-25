@@ -27,6 +27,7 @@ function userHistory(e){
                 <th>Customer </th>
                 <th>Costs</th>
                 <th>Date</th>
+                <th>Status</th>
             </tr>`
         
         if (response.error){
@@ -37,9 +38,11 @@ function userHistory(e){
         }
         else{
         response['Requested'].forEach(orders => {
+            console.log(response)
             order_id = orders.order_id
             meal = orders.meal
             price = orders.price
+            status = orders.status
             
             history += `
            
@@ -49,6 +52,7 @@ function userHistory(e){
             <td>`+username+`</td>
             <td>shs.`+price+`k</td>
             <td>24/03/2018</td>
+            <td><button class="btn_edit" >`+status+`</button></td>
         </tr>
             `
             console.log(response['Requested'].length)
