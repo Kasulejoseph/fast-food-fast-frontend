@@ -71,6 +71,10 @@ function call_u(res){
             message= `<h2>${response['error']}</h2`
             document.getElementById("data").innerHTML = data + message
         }
+        if (response['Failed']){
+            document.getElementById("danger").innerHTML = `<h2>Warning, 
+            You don't have permission to access the content of this page</h2>`
+        }
         console.log(response)
         let order_list = {}
         let date = window.sessionStorage.getItem("date")

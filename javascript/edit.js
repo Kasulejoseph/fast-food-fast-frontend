@@ -28,14 +28,23 @@ data= `
 </tr>
 
     `
-// get items on menu
+// get items on menu to edit them
 function edit(e){
     e.preventDefault();
+    let token = sessionStorage.getItem("token");
     fetch("https://fast-food-fast-db.herokuapp.com/api/v1/menu",{
         method: 'get',
+        headers: {
+            'Authorization': 'Bearer ' + token,
+            'Accept': 'application/json, text/plain, */*',
+            "Content-type": "application/json",
+        },
     })
     .then(json)
     .then((response) => {
+        if (response.error){
+            document.getElementById("danger").innerHTML = `<h2>Sorry, The menu list is currently empty</h2>`
+        }
         console.log(response);
         response['Onmenu'].forEach((meal) => {
             Dish = `${meal.meal}`;

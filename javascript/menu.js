@@ -12,6 +12,7 @@ function menuPost(e){
     let price = document.getElementById("price").value;
     let desc = document.getElementById("desc").value;
     let image = document.getElementById("image").value;
+    let token = window.sessionStorage.getItem("token")
     let menu = {
         "meal": dish,
         price: Number(price),
@@ -22,6 +23,7 @@ function menuPost(e){
     fetch("https://fast-food-fast-db.herokuapp.com/api/v1/menu", {
         method: 'post',
         headers: {
+            'Authorization': 'Bearer ' + token,
             'Accept': 'application/json, text/plain, */*',
             "Content-type": "application/json",
         },
@@ -32,6 +34,11 @@ function menuPost(e){
         console.log(res);
         if (res.status == 'Failed'){
             danger.innerHTML = res.message
+            success.style.display = "none";
+            danger.style.display = "block";
+        }
+        else if(res['Failed']){
+            danger.innerHTML = res.Failed
             success.style.display = "none";
             danger.style.display = "block";
         }

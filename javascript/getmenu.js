@@ -3,6 +3,7 @@ window.addEventListener
 function json(response) {
     return response.json()
 }
+let danger = document.getElementById("danger");
 // get items on menu
 function menuGet(e){
     e.preventDefault();
@@ -12,6 +13,9 @@ function menuGet(e){
     .then(json)
     .then((response) => {
         console.log(response);
+        if(response.error){
+            danger.innerHTML = `<h2>sorry, ${response.error}</h2>`
+        }
         let Image = ['noodles.jpg','pizza.jpeg','burger.jpeg','meat1.jpg']
         Image.forEach((image)=>{
             Image = image

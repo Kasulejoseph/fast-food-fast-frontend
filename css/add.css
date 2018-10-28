@@ -150,15 +150,31 @@ textarea {
     background-color: #555;
 }
 #success{
-    color: #1c8c11;
-    width: 50%;
-    margin-left: 20%;
+    color: #fff;
+    text-align: center;
+    background-color: #1c8c11;
+    margin-top: 10px;
+    padding: 15px;
+    width: 70%;
+    margin-left: 150px;
+    min-height: auto;
+    display: none;
 }
 #danger {
-    font-size: 30px;
-    color: #e8491d;
-    margin-left: 20%;
+    font-size: 20px;
+    color: #fff;
+    background-color: #e8491d;
+    text-align: center;
+    margin-top: 10px;
+    padding: 15px;
+    width: 70%;
+    margin-left: 150px;
+    min-height: auto;
+    display: none;
 
+}
+#orders{
+    display: none;
 }
 
 
@@ -166,7 +182,55 @@ textarea {
 @media (min-width:640px) {body {font-size: 1rem;}}
 @media (min-width:960px) {body {font-size: 1.2rem;}}
 @media (min-width:1100px) {body {font-size: 1.2rem;}}
-
+@media (max-width:1183px){
+    header {
+        padding: 20px;
+        min-height: 100px;
+        text-align: center;
+    }
+    #nav{
+        float: none;
+    }
+    .search{
+        width: 50%;
+        margin-left: 25%;
+        padding-left:0%;
+        float: none;
+    }
+    
+    #menu {
+        text-align: center;
+        float: none;
+    }
+    .search{
+        width: 50%;
+        margin-left: 25%;
+        padding-left:0%;
+        float: none;
+    }
+    
+    #menu {
+        text-align: center;
+        padding-top: 0px;
+        float: none;
+    }
+    #highlight{
+        text-align: center;
+        float: none;
+        color: rgb(148, 63, 56);
+        font-family: "Times New Roman", Times, serif;
+    }
+    
+}
+    }
+    #highlight{
+        text-align: center;
+        float: none;
+        color: rgb(148, 63, 56);
+        font-family: "Times New Roman", Times, serif;
+    }
+    
+}
 @media only screen and (max-width: 900px) {
     body {
         background-color: rgb(192, 173, 67);
@@ -186,7 +250,16 @@ textarea {
         float: none;
     }
     #admin{
-        margin: 10%;
+        margin: 5%;
+        width: 80%;
+        padding: 10px;
+    }
+    #success {
+        margin: 5%;
+        width: 80%; 
+    }
+    #danger {
+        margin: 5%;
         width: 80%;
     }
     #admin ul{
