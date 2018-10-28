@@ -11,11 +11,14 @@ function menuPost(e){
     let dish = document.getElementById("dish").value;
     let price = document.getElementById("price").value;
     let desc = document.getElementById("desc").value;
+    let image = document.getElementById("image").value;
     let menu = {
         "meal": dish,
         price: Number(price),
-        "description": desc
+        "description": desc,
+        "image": image
     }
+    console.log(menu)
     fetch("https://fast-food-fast-db.herokuapp.com/api/v1/menu", {
         method: 'post',
         headers: {

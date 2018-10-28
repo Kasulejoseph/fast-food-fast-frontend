@@ -40,12 +40,13 @@
     <div id = "danger"></div>
     <div id = "success"></div>
 <h1> Add Dish </h1>
-<form id ="add_form">
+<form id ="add_form" method = "POST" 
+         enctype = "multipart/form-data">
     <label>Dish Name: </label><input type="text" id = "dish" name="name" ><p></p>
     <label>Cost: </label><input id = "price" type="text" name="name" ><p></p>  
     <label>Description: </label><textarea id = "desc" name="desc" id="desc" cols="80" rows="10"></textarea>
     <p></p>
-    <label>Upload Image: </label> <input type="file" name="image" id="image"><p></p>
+    <label>Upload Image: </label> <input type="file" accept="image" name="image" id="image"><p></p>
     <input type="submit" value="Add food" id ="submit">
 </form>
 </div>

@@ -71,7 +71,7 @@ function loginUser(e){
         username:username,
         password:password
     }
-    fetch('https://fast-food-fast-db.herokuapp.com/api/v1/auth/login',
+    fetch('http://127.0.0.1:5000/api/v1/auth/login',
     {
         method: 'post',
         headers: {
@@ -107,7 +107,6 @@ function loginUser(e){
     })
 
 }
-
 
 // hide or show login page
 function login(){

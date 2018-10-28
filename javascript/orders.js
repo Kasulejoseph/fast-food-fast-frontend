@@ -51,6 +51,7 @@ function orderAll(e){
 // fetch all orders made by different users
 function call_u(res){
     let token = window.sessionStorage.getItem("token")
+    console.log(token)
     fetch("https://fast-food-fast-db.herokuapp.com/api/v1/orders/", {
         method: 'get',
         headers: {
@@ -62,6 +63,9 @@ function call_u(res){
     })
     .then(json)
     .then((response) => {
+        if (response.message){
+            document.getElementById("data").innerHTML = `<h2>${response.message}</h2>`
+        }
         if (response['error']){
             data += `</table>`
             message= `<h2>${response['error']}</h2`
