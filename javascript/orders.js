@@ -91,8 +91,8 @@ function call_u(res){
                     <td>`+order_list.location+`</td>
                     <td>shs.`+order_list.price+`k</td>
                     <td>`+date+`</td>
-                    <td id="btn_edit"><button onclick ="accept(${order_list.order_id})" class="btn_edit" >Accept</button></td>
-                    <td id="btn_delete"><button onclick ="decline(${order_list.order_id})" class="btn_delete" >Decline</button></td>
+                    <td  id = "btn_edit_${order_list.order_id}"><button onclick ="accept(${order_list.order_id})" class="btn_edit" >Accept</button></td>
+                    <td id="btn_delete_${order_list.order_id}"><button onclick ="decline(${order_list.order_id})" class="btn_delete" >Decline</button></td>
                     <td id = "checked"><input onclick="complete(${order_list.order_id})" type="checkbox" id ="checkbox">
                         <span class="checkmark"></span></td>
                         
@@ -160,7 +160,6 @@ function orderById(res, order_id){
 }
 // update order with processing
 function accept(order_id){
-    let token = window.sessionStorage.getItem("token");
     console.log(order_id)
     if (token){
         fetch(`https://fast-food-fast-db.herokuapp.com/api/v1/orders/${order_id}`, {
@@ -173,8 +172,10 @@ function accept(order_id){
             mode: 'cors',
             body: JSON.stringify({'status': "processing"})
         })
-        document.getElementById("btn_edit").innerHTML =`
-        <td id="btn_edit"><button class="btn_edit" >Accepted</button></td>`
+        document.getElementById(`btn_edit_${order_id}`).innerHTML =`
+        <td id="btn_edit"><button class="btn_edit" >Accepted</button></td>`;
+        document.getElementById(`btn_delete_${order_id}`).innerHTML = `
+        <td id="btn_delete"><button class="btn_delete" >Decline</button></td>`;
         
     }
 
@@ -194,8 +195,10 @@ function decline(order_id){
             mode: 'cors',
             body: JSON.stringify({'status': "cancelled"})
         })
-        document.getElementById("btn_delete").innerHTML = `
+        document.getElementById(`btn_delete_${order_id}`).innerHTML = `
         <td id="btn_delete"><button class="btn_delete" >Declined</button></td>`;
+        document.getElementById(`btn_edit_${order_id}`).innerHTML =`
+        <td id="btn_edit"><button class="btn_edit" >Accept</button></td>`;
     }
 
 }

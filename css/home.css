@@ -202,9 +202,18 @@ table .btn_add{
 
 /* footer */
 footer{
-    min-height: auto;
-    padding: 10px;
-    margin-top: 70%;
+    position: relative;
+    width: 100%;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 10px 10px 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
     color: #fff;
     background-color: #0e0d0c;
     text-align: center;
@@ -303,6 +312,7 @@ input[type=text]:focus {
     color: #fff;
     text-align: center;
     background-color: #1c8c11;
+    border-radius: 5px;
 }
 #danger{
     background-color: #333;
@@ -369,11 +379,6 @@ input[type=text]:focus {
         padding: 30px;
         min-height: auto;
         text-align: center;
-    }
-    footer{
-        margin-top: 10%;
-        padding: 20px;
-        min-height: 100px;
     }
     header #nav {
         text-align: center;

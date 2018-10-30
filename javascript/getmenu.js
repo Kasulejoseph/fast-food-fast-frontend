@@ -4,6 +4,11 @@ function json(response) {
     return response.json()
 }
 let danger = document.getElementById("danger");
+let Image = ['noodles.jpg','luwombo.jpg','pizza.jpeg','burger.jpeg','special-6.jpg']
+Image.forEach((image)=>{
+    Image = image
+})
+console.log(Image)
 // get items on menu
 function menuGet(e){
     e.preventDefault();
@@ -16,12 +21,6 @@ function menuGet(e){
         if(response.error){
             danger.innerHTML = `<h2>sorry, ${response.error}</h2>`
         }
-        let Image = ['noodles.jpg','pizza.jpeg','burger.jpeg','meat1.jpg']
-        Image.forEach((image)=>{
-            Image = image
-        })
-        console.log(Image)
-        // document.getElementById("img").innerHTML= Image;
         let menu =''
         
         response['Onmenu'].forEach((meal) => {
@@ -31,7 +30,7 @@ function menuGet(e){
             ID = `${meal.menu_id}`;
             Image = Image;
             menu += `<div class = "food">
-            <img id ="img" src="image/`+Image+`">
+            <img id ="img_${meal.menu_id}" src="image/`+Image+`">
             <span id ="id"></span>
             <h3>`+Dish+`</h3>`+Desc+` <br>
             <span id ="cost">price: shs.`+price+`k</span>
@@ -39,6 +38,7 @@ function menuGet(e){
             </div>`; 
         });
         document.getElementById("cost").innerHTML = menu;
+        document.getElementById("img_3").src = "image/luwombo.jpg";
 
     })
 }

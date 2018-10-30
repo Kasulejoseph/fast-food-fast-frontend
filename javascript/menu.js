@@ -5,14 +5,16 @@ let danger = document.getElementById("danger");
 function json(response) {
     return response.json()
 }
-
+let token = window.sessionStorage.getItem("token");
+if (!token){
+    document.getElementById("profile").style.display = "none";
+}
 function menuPost(e){
     e.preventDefault();
     let dish = document.getElementById("dish").value;
     let price = document.getElementById("price").value;
     let desc = document.getElementById("desc").value;
     let image = document.getElementById("image").value;
-    let token = window.sessionStorage.getItem("token")
     let menu = {
         "meal": dish,
         price: Number(price),
