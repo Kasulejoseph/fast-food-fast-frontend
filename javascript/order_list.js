@@ -7,7 +7,7 @@ function userHistory(e){
     e.preventDefault();
     let token = window.sessionStorage.getItem("token")
 
-    fetch("https://fast-food-fast-db.herokuapp.com/api/v1/users/orders/", {
+    fetch("https://fast-food-fast-fontend-ch4.herokuapp.com/api/v1/users/orders/", {
         method: 'get',
         headers: {
             'Authorization': 'Bearer ' + token,
@@ -43,7 +43,7 @@ function userHistory(e){
             meal = orders.meal
             price = orders.price
             status = orders.status
-            
+            date = orders.date_created 
             history += `
            
         <tr>
@@ -51,7 +51,7 @@ function userHistory(e){
             <td>`+meal+`</td>
             <td>`+username+`</td>
             <td>shs.`+price+`k</td>
-            <td>24/03/2018</td>
+            <td>`+date+`</td>
             <td><button class="btn_edit" >`+status+`</button></td>
         </tr>
             `

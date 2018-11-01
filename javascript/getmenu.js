@@ -4,15 +4,10 @@ function json(response) {
     return response.json()
 }
 let danger = document.getElementById("danger");
-let Image = ['noodles.jpg','luwombo.jpg','pizza.jpeg','burger.jpeg','special-6.jpg']
-Image.forEach((image)=>{
-    Image = image
-})
-console.log(Image)
 // get items on menu
 function menuGet(e){
     e.preventDefault();
-    fetch("https://fast-food-fast-db.herokuapp.com/api/v1/menu",{
+    fetch("https://fast-food-fast-fontend-ch4.herokuapp.com/api/v1/menu",{
         method: 'get',
     })
     .then(json)
@@ -22,15 +17,16 @@ function menuGet(e){
             danger.innerHTML = `<h2>sorry, ${response.error}</h2>`
         }
         let menu =''
-        
+        let image_url = window.sessionStorage.getItem("image_url");
+        console.log(image_url)
         response['Onmenu'].forEach((meal) => {
             Dish = `${meal.meal}`;
             Desc = `${meal.desc}`;
             price = `${meal.price}`;
             ID = `${meal.menu_id}`;
-            Image = Image;
+            Image = `${meal.image}`;
             menu += `<div class = "food">
-            <img id ="img_${meal.menu_id}" src="image/`+Image+`">
+            <img id ="image_${ID}" src="https://res.cloudinary.com/dcsrepenv/image/upload/v1540997420/${Image}">
             <span id ="id"></span>
             <h3>`+Dish+`</h3>`+Desc+` <br>
             <span id ="cost">price: shs.`+price+`k</span>
@@ -38,15 +34,13 @@ function menuGet(e){
             </div>`; 
         });
         document.getElementById("cost").innerHTML = menu;
-        document.getElementById("img_3").src = "image/luwombo.jpg";
-
     })
 }
 // create an order
 function add(ID){
     let token = window.sessionStorage.getItem("token")
     console.log(ID)
-    fetch("https://fast-food-fast-db.herokuapp.com/api/v1/users/orders/",{
+    fetch("https://fast-food-fast-fontend-ch4.herokuapp.com/api/v1/users/orders/",{
         method: "post",
         headers: {
             'Authorization': 'Bearer ' + token,
