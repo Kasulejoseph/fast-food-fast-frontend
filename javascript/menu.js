@@ -34,6 +34,7 @@ function json(response) {
 let token = window.sessionStorage.getItem("token");
 if (!token){
     document.getElementById("profile").style.display = "none";
+    window.location.href = './index.html';
 }
 
 function menuPost(e){

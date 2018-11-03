@@ -3,10 +3,14 @@ window.addEventListener
 function json(response) {
     return response.json()
 }
+let token = window.sessionStorage.getItem("token")
+if (!token){
+    document.getElementById("thank").style.display = "none";
+    document.getElementById("danger").innerHTML = `<h2>sorry your not logged in, please login</h2>`;
+    console.log("kjhckjh");
+}
 function userHistory(e){
     e.preventDefault();
-    let token = window.sessionStorage.getItem("token")
-
     fetch("https://fast-food-fast-db.herokuapp.com/api/v1/users/orders/", {
         method: 'get',
         headers: {
