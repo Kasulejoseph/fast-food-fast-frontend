@@ -7,7 +7,7 @@ let danger = document.getElementById("danger");
 // get items on menu
 function menuGet(e){
     e.preventDefault();
-    fetch("https://fast-food-fast-fontend-ch4.herokuapp.com/api/v1/menu",{
+    fetch("https://fast-food-fast-db.herokuapp.com/api/v1/menu",{
         method: 'get',
     })
     .then(json)
@@ -40,7 +40,7 @@ function menuGet(e){
 function add(ID){
     let token = window.sessionStorage.getItem("token")
     console.log(ID)
-    fetch("https://fast-food-fast-fontend-ch4.herokuapp.com/api/v1/users/orders/",{
+    fetch("https://fast-food-fast-db.herokuapp.com/api/v1/users/orders/",{
         method: "post",
         headers: {
             'Authorization': 'Bearer ' + token,

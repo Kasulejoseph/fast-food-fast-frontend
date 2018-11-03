@@ -7,7 +7,7 @@ function userHistory(e){
     e.preventDefault();
     let token = window.sessionStorage.getItem("token")
 
-    fetch("https://fast-food-fast-fontend-ch4.herokuapp.com/api/v1/users/orders/", {
+    fetch("https://fast-food-fast-db.herokuapp.com/api/v1/users/orders/", {
         method: 'get',
         headers: {
             'Authorization': 'Bearer ' + token,

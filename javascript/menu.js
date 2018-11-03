@@ -49,7 +49,7 @@ function menuPost(e){
         "image": image
     }
     console.log(menu)
-    fetch("https://fast-food-fast-fontend-ch4.herokuapp.com/api/v1/menu", {
+    fetch("https://fast-food-fast-db.herokuapp.com/api/v1/menu", {
         method: 'post',
         headers: {
             'Authorization': 'Bearer ' + token,

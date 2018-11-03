@@ -90,7 +90,7 @@ function call_u(res){
                     <td>`+order_list.username+`</td>
                     <td>`+order_list.location+`</td>
                     <td>shs.`+order_list.price+`k</td>
-                    <td>`+date+`</td>
+                    <td>`+order.date_created+`</td>
                     <td  id = "btn_edit_${order_list.order_id}"><button onclick ="accept(${order_list.order_id})" class="btn_edit" >Accept</button></td>
                     <td id="btn_delete_${order_list.order_id}"><button onclick ="decline(${order_list.order_id})" class="btn_delete" >Decline</button></td>
                     <td id = "checked"><input onclick="complete(${order_list.order_id})" type="checkbox" id ="checkbox">
@@ -122,6 +122,7 @@ function orderById(res, order_id){
         })
         .then(json)
         .then((result) => {
+            console.log(result)
             if (result.status == 'Failed'){
                 data += `</table>`
                 message = `
@@ -141,7 +142,7 @@ function orderById(res, order_id){
                         <td>`+order_list.username+`</td>
                         <td>`+order_list.location+`</td>
                         <td>shs.`+order_list.price+`k</td>
-                        <td>24/03/2018</td>
+                        <td>`+order_list.date+`</td>
                         <td id="btn_edit"><button onclick ="accept(${order_list.order_id})" class="btn_edit" >Accept</button></td>
                         <td id="btn_delete"><button onclick ="decline(${order_list.order_id})" class="btn_delete" >Decline</button></td>
                         <td id = "checked"><input onclick="complete(${order_list.order_id})" type="checkbox" id ="checkbox">
