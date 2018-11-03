@@ -8,6 +8,8 @@ Users should signup and login into the application to start making orders which 
 with in 2 hours time irrespective of the customers location.
 
 The application is hosted on heroku view it [here](https://fast-food-fast-fontend-ch4.herokuapp.com)
+
+Admin should login from [here](https://fast-food-fast-fontend-ch4.herokuapp.com/000000.html)
 ## users roles
 - sign up and login
 - order food
