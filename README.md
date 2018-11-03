@@ -22,3 +22,15 @@ The application is hosted on heroku view it [here](https://fast-food-fast-fonten
 - view all user orders
 - view menu
 - logout
+## Built With
+- vanilla-JS - is a fast, lightweight, cross-platform framework
+for building incredible, powerful JavaScript applications.
+- html && css - used to design the UI of the application and as well as providing a good UX
+- [Api](https://github.com/Kasulejoseph/fast-food-fast-db) - provides the backend functionality for the application
+## Author
+- [kasule joseph](https://www.linkedin.com/in/joseph-kasule-797099118/)
+## Acknowledgement
+- Cohort 12
+- Errors should never pass silently, Unless explicitly silenced.
+- If the implementation is hard to explain, it's a bad idea.
+- If the implementation is easy to explain, it may be a good idea.
