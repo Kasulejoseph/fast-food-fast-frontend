@@ -1,5 +1,5 @@
 
-import {FETCHMENU, POSTMENU} from './types';
+import {FETCHMENU, POSTMENU, REGISTER} from './types';
 
 export const getList = function (dispatch) {
         fetch('https://fast-food-fast-db.herokuapp.com/api/v1/menu'
@@ -37,6 +37,26 @@ export const myMenu= function (menu){
             getList(dispatch);
             dispatch({
             type: POSTMENU,
+            payload: data});
+        });
+    }
+}
+
+export const registerAction= function (user){
+    return function (dispatch){
+        fetch('https://fast-food-fast-db.herokuapp.com/api/v1/auth/signup',
+        {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json',
+            },
+            body: JSON.stringify(user)
+        })
+        .then(res => res.json())
+        .then(data => {
+            getList(dispatch);
+            dispatch({
+            type: REGISTER,
             payload: data});
         });
     }
