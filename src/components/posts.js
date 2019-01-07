@@ -40,6 +40,7 @@ class Posts extends React.Component {
 
 const mapStateToProps = (state) => {
   return  ({
+      //menu should be the key set to the root reducer
     menu:state.menu.menu
 })};
 

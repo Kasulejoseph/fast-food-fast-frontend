@@ -1,6 +1,7 @@
 
-import {createStore, applyMiddleware} from 'redux'
+import {createStore, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
+// import { composeWithDevTools } from 'redux-devtools-extension';
 import rootRedurer from './Reducers'
 const intialState = {}
 const middleWare = [thunk]
@@ -8,8 +9,6 @@ const middleWare = [thunk]
 const store = createStore(
     rootRedurer,
     intialState,
-    applyMiddleware(
-        ...middleWare
-    )
-)
+        applyMiddleware(...middleWare)
+);
 export default store
