@@ -28,12 +28,12 @@ onSubmit(e){
 }
     render() {
         return (
-        <MDBContainer>
-      <MDBRow>
-        <MDBCol md="6">
+        <MDBContainer className="mt-5 pt-5 ">
+      <MDBRow className="flex flex-center">
+        <MDBCol  md="6">
         <form onSubmit = {this.onSubmit}>
-          <MDBCard>
-            <MDBCardBody className="mx-4">
+          <MDBCard className="mx-auto">
+            <MDBCardBody >
               <div className="text-center">
                 <h3 className="dark-grey-text mb-5">
                   <strong>Sign in</strong>

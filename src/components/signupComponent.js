@@ -31,8 +31,8 @@ onSubmit(e){
 }
     render() {
         return (
-            <MDBContainer>
-            <MDBRow>
+            <MDBContainer className="mt-5 pt-5 ">
+            <MDBRow className="flex flex-center">
                 <MDBCol md="6">
                 <form onSubmit = {this.onSubmit}>
                 <MDBCard>
