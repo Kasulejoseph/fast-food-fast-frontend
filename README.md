@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.com/Kasulejoseph/fast-food-fast-frontend.svg?branch=react-redux-branch)](https://travis-ci.com/Kasulejoseph/fast-food-fast-frontend)
-
-[![Coverage Status](https://coveralls.io/repos/github/Kasulejoseph/fast-food-fast-frontend/badge.svg?branch=fast-food-fast-frontend)](https://coveralls.io/github/Kasulejoseph/fast-food-fast-frontend?branch=fast-food-fast-frontend)
+[![Coverage Status](https://coveralls.io/repos/github/Kasulejoseph/fast-food-fast-frontend/badge.svg?branch=react-redux-branch)](https://coveralls.io/github/Kasulejoseph/fast-food-fast-frontend?branch=react-redux-branch)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
