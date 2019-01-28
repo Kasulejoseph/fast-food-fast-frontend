@@ -1,11 +1,10 @@
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
-import Postmenu from '../components/postForm';
-import SignUp from '../components/signupComponent';
-import LogIn from '../components/loginComponent';
-import Posts from '../components/posts'
-import Clock from '../components/clock'
+import Postmenu from '../container/Menu/Menu';
+import SignUp from '../container/Signup/Signup';
+import LogIn from '../container/Login/Login';
+import Posts from '../container/GetMenu/GetMenu'
 import React from 'react';
-import FixedNavbarExample from '../components/navbarComponent'
+import FixedNavbarExample from '../container/NavBar/NavBar'
 
 const RouterComponent = () => {
     return (
@@ -17,7 +16,6 @@ const RouterComponent = () => {
             <Route path="/signup" component={SignUp} />
             <Route path="/addmenu" component={Postmenu} />
             <Route path="/menu" component={Posts} />   
-            <Route path="/clock" component={Clock} />
         </Switch>
         </div>
         </BrowserRouter>

@@ -1,32 +1,18 @@
 import React from 'react';
 import {MDBNavbar, NavLink, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBIcon } from 'mdbreact';
 
-class FixedNavbarExample extends React.Component {
-  constructor(props) {
-      super(props);
-      this.state = {
-          collapse: false,
-      };
-      this.onClick = this.onClick.bind(this);
-  }
 
-  onClick() {
-    this.setState({
-        collapse: !this.state.collapse,
-      });
-  }
-
-  render() {
+const Navbar = ({onClick, isOpen}) => {
     const bgPink = {backgroundColor: '#e91e63'}
-    return(
-      <div >
+    return (
+        <div >
           <header>
             <MDBNavbar style={bgPink} color="grey darken-3"  dark expand="md" scrolling fixed="top">
               <MDBNavbarBrand href="/">
                   <strong>FAST FOOD FAST</strong>
               </MDBNavbarBrand>
-              <MDBNavbarToggler onClick={ this.onClick } />
-              <MDBCollapse isOpen = { this.state.collapse } navbar>
+              <MDBNavbarToggler onClick={onClick } />
+              <MDBCollapse isOpen = { isOpen } navbar>
                 <MDBNavbarNav left>
                   <MDBNavItem active>
                       <NavLink to="/">Home</NavLink>
@@ -57,7 +43,7 @@ class FixedNavbarExample extends React.Component {
           </header>
       </div>
     );
-  }
-}
+};
 
-export default FixedNavbarExample;
+
+export default Navbar;
