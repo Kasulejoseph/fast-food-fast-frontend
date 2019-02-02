@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "UI to power api",
   "main": "index.js",
+  "jest": {
+    "verbose": true
+  },
   "dependencies": {
     "abab": "^2.0.0",
     "abbrev": "^1.1.1",
@@ -65,7 +68,7 @@
     "babel-extract-comments": "^1.0.0",
     "babel-generator": "^6.26.1",
     "babel-helpers": "^6.24.1",
-    "babel-jest": "^23.6.0",
+    "babel-jest": "^24.0.0",
     "babel-messages": "^6.23.0",
     "babel-plugin-dynamic-import-node": "^2.2.0",
     "babel-plugin-istanbul": "^4.1.6",
@@ -188,7 +191,6 @@
     "core-js": "^2.6.3",
     "core-util-is": "^1.0.2",
     "cosmiconfig": "^5.0.7",
-    "coveralls": "^3.0.2",
     "create-ecdh": "^4.0.3",
     "create-hash": "^1.2.0",
     "create-hmac": "^1.1.7",
@@ -361,7 +363,6 @@
     "fs-minipass": "^1.2.5",
     "fs-write-stream-atomic": "^1.0.10",
     "fs.realpath": "^1.0.0",
-    "fsevents": "^1.2.7",
     "function-bind": "^1.1.1",
     "function.prototype.name": "^1.1.0",
     "functional-red-black-tree": "^1.0.1",
@@ -518,7 +519,7 @@
     "istanbul-lib-report": "^1.1.5",
     "istanbul-lib-source-maps": "^1.2.6",
     "istanbul-reports": "^1.5.1",
-    "jest": "^23.6.0",
+    "jest": "^24.0.0",
     "jest-changed-files": "^23.4.2",
     "jest-cli": "^23.6.0",
     "jest-config": "^23.6.0",
@@ -1136,9 +1137,10 @@
   "devDependencies": {
     "@babel/cli": "^7.1.0",
     "@babel/core": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.2",
+    "coveralls": "^3.0.2",
     "css-loader": "^1.0.0",
     "style-loader": "^0.23.0",
     "webpack": "^4.19.1",
@@ -1146,9 +1148,11 @@
     "webpack-dev-server": "^3.1.8"
   },
   "scripts": {
+    "coveralls": "test",
     "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
