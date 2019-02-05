@@ -5,7 +5,6 @@ import { Provider } from "react-redux";
 import store from "../store";
 import Postmenu from '../container/Menu/Menu';
 import FixedNavbarExample from '../container/NavBar/NavBar'
-import Posts from '../container/GetMenu/GetMenu'
 import React from "react";
 
 const RouterComponent = () => {
@@ -15,7 +14,7 @@ const RouterComponent = () => {
       <div>
         <FixedNavbarExample />
         <Switch>
-          <Route path="/login" component={LogIn} exact />
+          <Route path="/" component={LogIn} exact />
           <Route path="/signup" component={SignUp} />
           <Route path="/addmenu" component={Postmenu} />
         </Switch>

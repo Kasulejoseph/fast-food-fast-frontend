@@ -9,6 +9,7 @@ ShallowWrapper {
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
     "simulateError": [Function],
@@ -93,8 +94,25 @@ ShallowWrapper {
               >
                 Send
                 <t
+                  border={false}
+                  brand={false}
                   className="ml-2"
+                  fab={false}
+                  fal={false}
+                  far={false}
+                  fixed={false}
+                  flip=""
                   icon="paper-plane-o"
+                  inverse=""
+                  light={false}
+                  list={false}
+                  pull=""
+                  pulse={false}
+                  regular={false}
+                  rotate=""
+                  size=""
+                  spin={false}
+                  stack=""
                 />
               </t>
             </div>
@@ -181,8 +199,25 @@ ShallowWrapper {
               >
                 Send
                 <t
+                  border={false}
+                  brand={false}
                   className="ml-2"
+                  fab={false}
+                  fal={false}
+                  far={false}
+                  fixed={false}
+                  flip=""
                   icon="paper-plane-o"
+                  inverse=""
+                  light={false}
+                  list={false}
+                  pull=""
+                  pulse={false}
+                  regular={false}
+                  rotate=""
+                  size=""
+                  spin={false}
+                  stack=""
                 />
               </t>
             </div>
@@ -258,8 +293,25 @@ ShallowWrapper {
               >
                 Send
                 <t
+                  border={false}
+                  brand={false}
                   className="ml-2"
+                  fab={false}
+                  fal={false}
+                  far={false}
+                  fixed={false}
+                  flip=""
                   icon="paper-plane-o"
+                  inverse=""
+                  light={false}
+                  list={false}
+                  pull=""
+                  pulse={false}
+                  regular={false}
+                  rotate=""
+                  size=""
+                  spin={false}
+                  stack=""
                 />
               </t>
             </div>
@@ -337,8 +389,25 @@ ShallowWrapper {
                 >
                   Send
                   <t
+                    border={false}
+                    brand={false}
                     className="ml-2"
+                    fab={false}
+                    fal={false}
+                    far={false}
+                    fixed={false}
+                    flip=""
                     icon="paper-plane-o"
+                    inverse=""
+                    light={false}
+                    list={false}
+                    pull=""
+                    pulse={false}
+                    regular={false}
+                    rotate=""
+                    size=""
+                    spin={false}
+                    stack=""
                   />
                 </t>
               </div>,
@@ -476,8 +545,25 @@ ShallowWrapper {
                 >
                   Send
                   <t
+                    border={false}
+                    brand={false}
                     className="ml-2"
+                    fab={false}
+                    fal={false}
+                    far={false}
+                    fixed={false}
+                    flip=""
                     icon="paper-plane-o"
+                    inverse=""
+                    light={false}
+                    list={false}
+                    pull=""
+                    pulse={false}
+                    regular={false}
+                    rotate=""
+                    size=""
+                    spin={false}
+                    stack=""
                   />
                 </t>,
                 "className": "text-start mt-4",
@@ -491,8 +577,25 @@ ShallowWrapper {
                   "children": Array [
                     "Send",
                     <t
+                      border={false}
+                      brand={false}
                       className="ml-2"
+                      fab={false}
+                      fal={false}
+                      far={false}
+                      fixed={false}
+                      flip=""
                       icon="paper-plane-o"
+                      inverse=""
+                      light={false}
+                      list={false}
+                      pull=""
+                      pulse={false}
+                      regular={false}
+                      rotate=""
+                      size=""
+                      spin={false}
+                      stack=""
                     />,
                   ],
                   "color": "warning",
@@ -508,8 +611,25 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
+                      "border": false,
+                      "brand": false,
                       "className": "ml-2",
+                      "fab": false,
+                      "fal": false,
+                      "far": false,
+                      "fixed": false,
+                      "flip": "",
                       "icon": "paper-plane-o",
+                      "inverse": "",
+                      "light": false,
+                      "list": false,
+                      "pull": "",
+                      "pulse": false,
+                      "regular": false,
+                      "rotate": "",
+                      "size": "",
+                      "spin": false,
+                      "stack": "",
                     },
                     "ref": null,
                     "rendered": null,
@@ -608,8 +728,25 @@ ShallowWrapper {
                 >
                   Send
                   <t
+                    border={false}
+                    brand={false}
                     className="ml-2"
+                    fab={false}
+                    fal={false}
+                    far={false}
+                    fixed={false}
+                    flip=""
                     icon="paper-plane-o"
+                    inverse=""
+                    light={false}
+                    list={false}
+                    pull=""
+                    pulse={false}
+                    regular={false}
+                    rotate=""
+                    size=""
+                    spin={false}
+                    stack=""
                   />
                 </t>
               </div>
@@ -696,8 +833,25 @@ ShallowWrapper {
                 >
                   Send
                   <t
+                    border={false}
+                    brand={false}
                     className="ml-2"
+                    fab={false}
+                    fal={false}
+                    far={false}
+                    fixed={false}
+                    flip=""
                     icon="paper-plane-o"
+                    inverse=""
+                    light={false}
+                    list={false}
+                    pull=""
+                    pulse={false}
+                    regular={false}
+                    rotate=""
+                    size=""
+                    spin={false}
+                    stack=""
                   />
                 </t>
               </div>
@@ -773,8 +927,25 @@ ShallowWrapper {
                 >
                   Send
                   <t
+                    border={false}
+                    brand={false}
                     className="ml-2"
+                    fab={false}
+                    fal={false}
+                    far={false}
+                    fixed={false}
+                    flip=""
                     icon="paper-plane-o"
+                    inverse=""
+                    light={false}
+                    list={false}
+                    pull=""
+                    pulse={false}
+                    regular={false}
+                    rotate=""
+                    size=""
+                    spin={false}
+                    stack=""
                   />
                 </t>
               </div>
@@ -852,8 +1023,25 @@ ShallowWrapper {
                   >
                     Send
                     <t
+                      border={false}
+                      brand={false}
                       className="ml-2"
+                      fab={false}
+                      fal={false}
+                      far={false}
+                      fixed={false}
+                      flip=""
                       icon="paper-plane-o"
+                      inverse=""
+                      light={false}
+                      list={false}
+                      pull=""
+                      pulse={false}
+                      regular={false}
+                      rotate=""
+                      size=""
+                      spin={false}
+                      stack=""
                     />
                   </t>
                 </div>,
@@ -991,8 +1179,25 @@ ShallowWrapper {
                   >
                     Send
                     <t
+                      border={false}
+                      brand={false}
                       className="ml-2"
+                      fab={false}
+                      fal={false}
+                      far={false}
+                      fixed={false}
+                      flip=""
                       icon="paper-plane-o"
+                      inverse=""
+                      light={false}
+                      list={false}
+                      pull=""
+                      pulse={false}
+                      regular={false}
+                      rotate=""
+                      size=""
+                      spin={false}
+                      stack=""
                     />
                   </t>,
                   "className": "text-start mt-4",
@@ -1006,8 +1211,25 @@ ShallowWrapper {
                     "children": Array [
                       "Send",
                       <t
+                        border={false}
+                        brand={false}
                         className="ml-2"
+                        fab={false}
+                        fal={false}
+                        far={false}
+                        fixed={false}
+                        flip=""
                         icon="paper-plane-o"
+                        inverse=""
+                        light={false}
+                        list={false}
+                        pull=""
+                        pulse={false}
+                        regular={false}
+                        rotate=""
+                        size=""
+                        spin={false}
+                        stack=""
                       />,
                     ],
                     "color": "warning",
@@ -1023,8 +1245,25 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "class",
                       "props": Object {
+                        "border": false,
+                        "brand": false,
                         "className": "ml-2",
+                        "fab": false,
+                        "fal": false,
+                        "far": false,
+                        "fixed": false,
+                        "flip": "",
                         "icon": "paper-plane-o",
+                        "inverse": "",
+                        "light": false,
+                        "list": false,
+                        "pull": "",
+                        "pulse": false,
+                        "regular": false,
+                        "rotate": "",
+                        "size": "",
+                        "spin": false,
+                        "stack": "",
                       },
                       "ref": null,
                       "rendered": null,
@@ -1049,9 +1288,13 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
         "lifecycles": Object {
           "componentDidUpdate": Object {
             "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
           },
           "getDerivedStateFromProps": true,
           "getSnapshotBeforeUpdate": true,

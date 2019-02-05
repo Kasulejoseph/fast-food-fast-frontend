@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux'
-import {myMenu} from '../../actions/fetchAction'
+import {myMenu} from '../../actions/feactAction'
 import PostForm from '../../components/PostForm/PostForm'
 class Postmenu extends React.Component {
     constructor(props) {

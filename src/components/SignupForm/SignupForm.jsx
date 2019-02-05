@@ -26,7 +26,7 @@ const SignupForm = ({onChange, onSubmit}) => {
                     <MDBInput
                     label="Your email"
                     group
-                    type="text"
+                    type="email"
                     name='email'
                     onChange={onChange}
                     validate 
