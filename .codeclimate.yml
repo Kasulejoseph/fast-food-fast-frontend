@@ -1,0 +1,18 @@
+engines:
+  eslint:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+        javascript:
+          mass_threshold: 75
+checks:
+  argument-count:
+    enabled: false
+
+exclude_patterns:
+  - "src/serviceWorker.js"
+  - "src/actions/__tests__/"
+  - "src/reducers/__tests__/"
+  - "**/*.spec.jsx"

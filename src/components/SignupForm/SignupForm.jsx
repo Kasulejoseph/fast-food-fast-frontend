@@ -11,7 +11,7 @@ const SignupForm = ({onChange, onSubmit}) => {
                 <MDBCard>
                     <MDBCardBody className="mx-4">
                     <div className="text-center">
-                        <h3 className="pink-text mb-5">
+                        <h3 className="dark-grey-text mb-5">
                         <strong>Sign up</strong>
                         </h3>
                     </div>
@@ -22,14 +22,16 @@ const SignupForm = ({onChange, onSubmit}) => {
                     name='username'
                     onChange={onChange}
                     validate
+                    required
                     />
                     <MDBInput
                     label="Your email"
                     group
-                    type="text"
+                    type="email"
                     name='email'
                     onChange={onChange}
                     validate 
+                    required
                     />
                     <MDBInput
                     label="Your password" 
@@ -37,7 +39,9 @@ const SignupForm = ({onChange, onSubmit}) => {
                     type="password" 
                     name='password' 
                     onChange={onChange} 
-                    validate />
+                    validate 
+                    required
+                    />
                     <MDBInput 
                     label="Your Location" 
                     group type="text" 
@@ -47,11 +51,11 @@ const SignupForm = ({onChange, onSubmit}) => {
                     <div className="md-form pb-3">
                         <div className="form-check my-4">
                         <input
-                            className="form-check-input"
+                            className="form-check-input mt-3"
                             type="checkbox"
                             id="defaultCheck12"
                         />
-                        <label htmlFor="defaultCheck12" className="grey-text">
+                        <label htmlFor="defaultCheck12" className="grey-text ml-4">
                             Accept the
                             <a href="#!" className="blue-text">
 
@@ -64,7 +68,7 @@ const SignupForm = ({onChange, onSubmit}) => {
                         <MDBCol md="6" className="text-center">
                         <button 
                             type="submit"
-                            className="btn btn-pink btn-block btn-rounded z-depth-1"
+                            className="btn blue-gradient btn-block btn-rounded z-depth-1"
                         >
                             Sign up
                         </button>
@@ -80,7 +84,7 @@ const SignupForm = ({onChange, onSubmit}) => {
                         </MDBCol>
                     </MDBRow>
                     </MDBCardBody>
-                    <div className="footer pt-3 mdb-color lighten-3">
+                    <div className="footer pt-3 mdb-color">
                     <MDBRow className="d-flex justify-content-center">
                         <p className="font-small white-text mb-2 pt-3">
                         or Sign up with:

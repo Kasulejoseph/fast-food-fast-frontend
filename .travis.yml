@@ -4,7 +4,15 @@ node_js:
 cache:
   directories:
     - node_modules
-install:
-  - yarn
+env:
+  global:
+    - CC_TEST_REPORTER_ID=7f6c30ad416a5139993f2cfb9853f953941a0437338a905d324df2b664fdb309
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
 script:
-  - npm test
+  - yarn test
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+  - yarn coveralls

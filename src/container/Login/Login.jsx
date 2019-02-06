@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { loginAction } from "../../actions/feactAction";
 import LoginForm from "../../components/LoginForm/LoginForm";
-class LogIn extends React.Component {
+export class LogIn extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,7 +14,7 @@ class LogIn extends React.Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
-  onChange(e) {
+  onChange(e) {    
     this.setState({ [e.target.name]: e.target.value });
   }
   onSubmit(e) {

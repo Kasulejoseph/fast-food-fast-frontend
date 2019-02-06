@@ -1,2 +1,5 @@
 /node_modules
 /dist
+public/*
+build/static/css/*.map
+build/static/js/*.map

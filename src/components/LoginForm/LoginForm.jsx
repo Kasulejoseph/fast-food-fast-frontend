@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   MDBContainer,
   MDBRow,
@@ -9,7 +9,8 @@ import {
   MDBBtn,
   MDBIcon,
   MDBModalFooter
-} from "mdbreact";
+} from 'mdbreact';
+import { Link } from 'react-router-dom';
 
 const LoginForm = ({ onChange, onSubmit }) => {
   return (
@@ -33,6 +34,7 @@ const LoginForm = ({ onChange, onSubmit }) => {
                   validate
                   error="wrong"
                   success="right"
+                  required
                 />
                 <MDBInput
                   label="Your password"
@@ -42,6 +44,7 @@ const LoginForm = ({ onChange, onSubmit }) => {
                   onChange={onChange}
                   validate
                   containerClass="mb-0"
+                  required
                 />
                 <p className="font-small blue-text d-flex justify-content-end pb-3">
                   Forgot
@@ -95,9 +98,9 @@ const LoginForm = ({ onChange, onSubmit }) => {
               <MDBModalFooter className="mx-5 pt-3 mb-1">
                 <p className="font-small grey-text d-flex justify-content-end">
                   Not a member?
-                  <a href="./signup" className="blue-text ml-1">
-                    Sign Up
-                  </a>
+                  <Link to="/signup" className="blue-text ml-1">
+                    signup
+                  </Link>
                 </p>
               </MDBModalFooter>
             </MDBCard>
