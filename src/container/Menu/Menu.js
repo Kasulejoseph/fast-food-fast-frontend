@@ -1,8 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux'
-import {myMenu} from '../../actions/fetchAction'
+import {myMenu} from '../../actions/feactAction'
 import PostForm from '../../components/PostForm/PostForm'
-class Postmenu extends React.Component {
+export class Postmenu extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -25,7 +25,7 @@ class Postmenu extends React.Component {
             price: Number(this.state.price),
             image: 'image.jpg'
         };
-        this.props.myMenu(menu)
+        myMenu(menu)
     }
     render() {
         return (

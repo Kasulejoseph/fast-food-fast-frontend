@@ -15,7 +15,6 @@ console.log(action.payload);
     case LOGIN:
       console.log(action.payload);
       return { ...state, user: action.payload };
-
     default:
       return state;
   }
