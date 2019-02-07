@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1549480909774" clover="3.2.0">
-  <project timestamp="1549480909774" name="All files">
-    <metrics statements="98" coveredstatements="73" conditionals="16" coveredconditionals="5" methods="39" coveredmethods="25" elements="153" coveredelements="103" complexity="0" loc="98" ncloc="98" packages="12" files="15" classes="15">
+<coverage generated="1549518550420" clover="3.2.0">
+  <project timestamp="1549518550420" name="All files">
+    <metrics statements="98" coveredstatements="74" conditionals="16" coveredconditionals="5" methods="39" coveredmethods="25" elements="153" coveredelements="104" complexity="0" loc="98" ncloc="98" packages="12" files="15" classes="15">
       <package name="src">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <file name="App.js" path="/Users/kasule/Desktop/fast-food-fast-frontend/src/App.js">
@@ -16,9 +16,9 @@
         </file>
       </package>
       <package name="src.actions">
-        <metrics statements="39" coveredstatements="14" conditionals="11" coveredconditionals="0" methods="17" coveredmethods="3"/>
+        <metrics statements="38" coveredstatements="14" conditionals="11" coveredconditionals="0" methods="17" coveredmethods="3"/>
         <file name="feactAction.js" path="/Users/kasule/Desktop/fast-food-fast-frontend/src/actions/feactAction.js">
-          <metrics statements="34" coveredstatements="9" conditionals="11" coveredconditionals="0" methods="17" coveredmethods="3"/>
+          <metrics statements="33" coveredstatements="9" conditionals="11" coveredconditionals="0" methods="17" coveredmethods="3"/>
           <line num="5" count="4" type="stmt"/>
           <line num="6" count="4" type="stmt"/>
           <line num="7" count="0" type="stmt"/>
@@ -32,27 +32,26 @@
           <line num="25" count="0" type="stmt"/>
           <line num="33" count="0" type="stmt"/>
           <line num="35" count="0" type="stmt"/>
-          <line num="37" count="0" type="stmt"/>
-          <line num="38" count="0" type="stmt"/>
-          <line num="46" count="4" type="stmt"/>
-          <line num="47" count="1" type="stmt"/>
-          <line num="48" count="0" type="stmt"/>
-          <line num="55" count="0" type="stmt"/>
-          <line num="57" count="0" type="cond" truecount="0" falsecount="5"/>
-          <line num="58" count="0" type="stmt"/>
-          <line num="60" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="36" count="0" type="stmt"/>
+          <line num="44" count="4" type="stmt"/>
+          <line num="45" count="1" type="stmt"/>
+          <line num="46" count="0" type="stmt"/>
+          <line num="53" count="0" type="stmt"/>
+          <line num="55" count="0" type="cond" truecount="0" falsecount="5"/>
+          <line num="56" count="0" type="stmt"/>
+          <line num="58" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="59" count="0" type="stmt"/>
           <line num="61" count="0" type="stmt"/>
-          <line num="63" count="0" type="stmt"/>
-          <line num="71" count="4" type="stmt"/>
-          <line num="72" count="1" type="stmt"/>
-          <line num="73" count="0" type="stmt"/>
-          <line num="80" count="0" type="stmt"/>
-          <line num="82" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="83" count="0" type="stmt"/>
-          <line num="86" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="87" count="0" type="stmt"/>
+          <line num="69" count="4" type="stmt"/>
+          <line num="70" count="1" type="stmt"/>
+          <line num="71" count="0" type="stmt"/>
+          <line num="78" count="0" type="stmt"/>
+          <line num="80" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="81" count="0" type="stmt"/>
+          <line num="84" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="85" count="0" type="stmt"/>
+          <line num="86" count="0" type="stmt"/>
           <line num="88" count="0" type="stmt"/>
-          <line num="90" count="0" type="stmt"/>
         </file>
         <file name="type.js" path="/Users/kasule/Desktop/fast-food-fast-frontend/src/actions/type.js">
           <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -97,9 +96,9 @@
         </file>
       </package>
       <package name="src.container.Login">
-        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
         <file name="Login.jsx" path="/Users/kasule/Desktop/fast-food-fast-frontend/src/container/Login/Login.jsx">
-          <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+          <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
           <line num="7" count="4" type="stmt"/>
           <line num="8" count="4" type="stmt"/>
           <line num="13" count="4" type="stmt"/>
@@ -107,8 +106,9 @@
           <line num="18" count="1" type="stmt"/>
           <line num="21" count="1" type="stmt"/>
           <line num="22" count="1" type="stmt"/>
-          <line num="27" count="1" type="stmt"/>
-          <line num="31" count="5" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
+          <line num="28" count="1" type="stmt"/>
+          <line num="32" count="5" type="stmt"/>
         </file>
       </package>
       <package name="src.container.Menu">
@@ -149,7 +149,7 @@
           <line num="23" count="1" type="stmt"/>
           <line num="25" count="1" type="stmt"/>
           <line num="26" count="1" type="stmt"/>
-          <line num="33" count="1" type="stmt"/>
+          <line num="34" count="1" type="stmt"/>
           <line num="35" count="1" type="stmt"/>
           <line num="38" count="4" type="stmt"/>
         </file>

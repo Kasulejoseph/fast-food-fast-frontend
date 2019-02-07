@@ -1,20 +1,20 @@
-import React from "react";
-import { connect } from "react-redux";
-import { loginAction } from "../../actions/feactAction";
-import LoginForm from "../../components/LoginForm/LoginForm";
+import React from 'react';
+import { connect } from 'react-redux';
+import { loginAction } from '../../actions/feactAction';
+import LoginForm from '../../components/LoginForm/LoginForm';
 export class LogIn extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: "",
-      password: "",
-      role: "user"
+      email: '',
+      password: '',
+      role: 'user'
     };
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
 
-  onChange(e) {    
+  onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
   }
   onSubmit(e) {
@@ -25,7 +25,7 @@ export class LogIn extends React.Component {
       password: this.state.password,
       role: this.state.role
     };
-    this.props.loginAction(user);
+    loginAction(user);
   }
 
   render() {
