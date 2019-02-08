@@ -3,16 +3,6 @@ import React from 'react';
 import { toast } from 'react-toastify';
 
 let token = window.localStorage.getItem('token')
-export const getList = function(dispatch) {
-  fetch('https://fast-food-fast-db.herokuapp.com/api/v1/menu')
-    .then(res => res.json())
-    .then(data => {
-      dispatch({
-        type: FETCHMENU,
-        payload: data.Onmenu
-      });
-    });
-};
 
 export const fetchMenu = function() {
   return function(dispatch) {
