@@ -24,7 +24,8 @@ export class LogIn extends React.Component {
       password: this.state.password,
       role: this.state.role
     };
-    this.props.loginAction(user);
+    const {history} = this.props
+    this.props.loginAction(user, history);
   }
 
   render() {

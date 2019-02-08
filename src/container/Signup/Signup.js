@@ -28,9 +28,8 @@ export class SignUp extends React.Component {
       location: this.state.location,
       role: this.state.role
     };
-
-    this.props.registerAction(user);
-    console.log(user);
+    const {history} = this.props
+    this.props.registerAction(user, history);
   }
   render() {
     return <SignUpForm onSubmit={this.onSubmit} onChange={this.onChange} />;
