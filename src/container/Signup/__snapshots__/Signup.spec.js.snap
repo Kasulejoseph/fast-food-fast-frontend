@@ -22,12 +22,49 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "onChange": [Function],
-      "onSubmit": [Function],
+      "children": Array [
+        <NavBarAuth
+          active2="de-active"
+          isOpen={false}
+          onClick={[Function]}
+        />,
+        ",",
+        <SignupForm
+          onChange={[Function]}
+          onSubmit={[Function]}
+        />,
+      ],
     },
     "ref": null,
-    "rendered": null,
-    "type": [Function],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "active2": "de-active",
+          "isOpen": false,
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      ",",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "onChange": [Function],
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -35,12 +72,49 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "onChange": [Function],
-        "onSubmit": [Function],
+        "children": Array [
+          <NavBarAuth
+            active2="de-active"
+            isOpen={false}
+            onClick={[Function]}
+          />,
+          ",",
+          <SignupForm
+            onChange={[Function]}
+            onSubmit={[Function]}
+          />,
+        ],
       },
       "ref": null,
-      "rendered": null,
-      "type": [Function],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "active2": "de-active",
+            "isOpen": false,
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        ",",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "onChange": [Function],
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
     },
   ],
   Symbol(enzyme.__options__): Object {

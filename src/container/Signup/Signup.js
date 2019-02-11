@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { registerAction } from '../../actions/feactAction';
 import SignUpForm from '../../components/SignupForm/SignupForm';
+import NavBarAuth from '../../components/NavBar/NavBarAuth';
 
 export class SignUp extends React.Component {
   constructor(props) {
@@ -11,13 +12,22 @@ export class SignUp extends React.Component {
       email: '',
       password: '',
       location: '',
-      role: 'user'
+      role: 'user',
+      collapse: false,
+      active2: 'de-active'
     };
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
+    this.onClick = this.onClick.bind(this);
   }
   onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
+  }
+  onClick() {
+    this.setState({
+      collapse: !this.state.collapse,
+      active2: 'active'
+    });
   }
   onSubmit(e) {
     e.preventDefault();
@@ -28,11 +38,16 @@ export class SignUp extends React.Component {
       location: this.state.location,
       role: this.state.role
     };
-    const {history} = this.props
+    const { history } = this.props;
     this.props.registerAction(user, history);
   }
   render() {
-    return <SignUpForm onSubmit={this.onSubmit} onChange={this.onChange} />;
+    return (
+      <>
+        <NavBarAuth onClick={this.onClick} isOpen={this.state.collapse} active2={this.state.active2}/>,
+        <SignUpForm onSubmit={this.onSubmit} onChange={this.onChange} />
+      </>
+    );
   }
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import {MDBNavbar, NavLink, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBIcon } from 'mdbreact';
 
 
-const Navbar = ({onClick, isOpen}) => {
+const Navbar = ({onClick, isOpen, active}) => {
     const bgPink = {backgroundColor: '#e91e63'}
     return (
         <div >
@@ -14,17 +14,11 @@ const Navbar = ({onClick, isOpen}) => {
               <MDBNavbarToggler onClick={onClick } />
               <MDBCollapse isOpen = { isOpen } navbar>
                 <MDBNavbarNav left>
-                  <MDBNavItem active>
-                      <NavLink to="/">Home</NavLink>
+                  <MDBNavItem active ={active}>
+                      <NavLink to="/addmenu">Home</NavLink>
                   </MDBNavItem>
                   <MDBNavItem>
                       <NavLink to="/menu">Menu</NavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                      <NavLink to="/addmenu">Add Menu</NavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <NavLink to="/signup">Signup</NavLink>
                   </MDBNavItem>
                 </MDBNavbarNav>
                 <MDBNavbarNav right>
