@@ -67,7 +67,7 @@ ShallowWrapper {
                 tag="li"
               >
                 <t
-                  to="/"
+                  to="/addmenu"
                 >
                   Home
                 </t>
@@ -81,13 +81,2317 @@ ShallowWrapper {
                   Menu
                 </t>
               </t>
+            </t>
+            <t
+              right={true}
+              tag="ul"
+            >
               <t
+                tag="li"
+              >
+                <t
+                  to="#"
+                >
+                  <t
+                    border={false}
+                    brand={false}
+                    className=""
+                    fab={false}
+                    fal={false}
+                    far={false}
+                    fixed={false}
+                    flip=""
+                    icon="facebook"
+                    inverse=""
+                    light={false}
+                    list={false}
+                    pull=""
+                    pulse={false}
+                    regular={false}
+                    rotate=""
+                    size=""
+                    spin={false}
+                    stack=""
+                  />
+                </t>
+              </t>
+              <t
+                tag="li"
+              >
+                <t
+                  to="#"
+                >
+                  <t
+                    border={false}
+                    brand={false}
+                    className=""
+                    fab={false}
+                    fal={false}
+                    far={false}
+                    fixed={false}
+                    flip=""
+                    icon="twitter"
+                    inverse=""
+                    light={false}
+                    list={false}
+                    pull=""
+                    pulse={false}
+                    regular={false}
+                    rotate=""
+                    size=""
+                    spin={false}
+                    stack=""
+                  />
+                </t>
+              </t>
+              <t
+                tag="li"
+              >
+                <t
+                  to="#"
+                >
+                  <t
+                    border={false}
+                    brand={false}
+                    className=""
+                    fab={false}
+                    fal={false}
+                    far={false}
+                    fixed={false}
+                    flip=""
+                    icon="instagram"
+                    inverse=""
+                    light={false}
+                    list={false}
+                    pull=""
+                    pulse={false}
+                    regular={false}
+                    rotate=""
+                    size=""
+                    spin={false}
+                    stack=""
+                  />
+                </t>
+              </t>
+            </t>
+          </t>
+        </t>
+      </header>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <t
+          color="grey darken-3"
+          dark={true}
+          expand="md"
+          fixed="top"
+          scrolling={true}
+          style={
+            Object {
+              "backgroundColor": "#e91e63",
+            }
+          }
+          tag="nav"
+        >
+          <us
+            href="/"
+          >
+            <strong>
+              FAST FOOD FAST
+            </strong>
+          </us>
+          <t
+            tag="button"
+            type="button"
+          />
+          <t
+            delay={
+              Object {
+                "hide": 350,
+                "show": 350,
+              }
+            }
+            isOpen=""
+            navbar={true}
+            onClosed={[Function]}
+            onOpened={[Function]}
+          >
+            <t
+              left={true}
+              tag="ul"
+            >
+              <t
+                active={true}
                 tag="li"
               >
                 <t
                   to="/addmenu"
                 >
-                  Add Menu
+                  Home
+                </t>
+              </t>
+              <t
+                tag="li"
+              >
+                <t
+                  to="/menu"
+                >
+                  Menu
+                </t>
+              </t>
+            </t>
+            <t
+              right={true}
+              tag="ul"
+            >
+              <t
+                tag="li"
+              >
+                <t
+                  to="#"
+                >
+                  <t
+                    border={false}
+                    brand={false}
+                    className=""
+                    fab={false}
+                    fal={false}
+                    far={false}
+                    fixed={false}
+                    flip=""
+                    icon="facebook"
+                    inverse=""
+                    light={false}
+                    list={false}
+                    pull=""
+                    pulse={false}
+                    regular={false}
+                    rotate=""
+                    size=""
+                    spin={false}
+                    stack=""
+                  />
+                </t>
+              </t>
+              <t
+                tag="li"
+              >
+                <t
+                  to="#"
+                >
+                  <t
+                    border={false}
+                    brand={false}
+                    className=""
+                    fab={false}
+                    fal={false}
+                    far={false}
+                    fixed={false}
+                    flip=""
+                    icon="twitter"
+                    inverse=""
+                    light={false}
+                    list={false}
+                    pull=""
+                    pulse={false}
+                    regular={false}
+                    rotate=""
+                    size=""
+                    spin={false}
+                    stack=""
+                  />
+                </t>
+              </t>
+              <t
+                tag="li"
+              >
+                <t
+                  to="#"
+                >
+                  <t
+                    border={false}
+                    brand={false}
+                    className=""
+                    fab={false}
+                    fal={false}
+                    far={false}
+                    fixed={false}
+                    flip=""
+                    icon="instagram"
+                    inverse=""
+                    light={false}
+                    list={false}
+                    pull=""
+                    pulse={false}
+                    regular={false}
+                    rotate=""
+                    size=""
+                    spin={false}
+                    stack=""
+                  />
+                </t>
+              </t>
+            </t>
+          </t>
+        </t>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <us
+              href="/"
+            >
+              <strong>
+                FAST FOOD FAST
+              </strong>
+            </us>,
+            <t
+              tag="button"
+              type="button"
+            />,
+            <t
+              delay={
+                Object {
+                  "hide": 350,
+                  "show": 350,
+                }
+              }
+              isOpen=""
+              navbar={true}
+              onClosed={[Function]}
+              onOpened={[Function]}
+            >
+              <t
+                left={true}
+                tag="ul"
+              >
+                <t
+                  active={true}
+                  tag="li"
+                >
+                  <t
+                    to="/addmenu"
+                  >
+                    Home
+                  </t>
+                </t>
+                <t
+                  tag="li"
+                >
+                  <t
+                    to="/menu"
+                  >
+                    Menu
+                  </t>
+                </t>
+              </t>
+              <t
+                right={true}
+                tag="ul"
+              >
+                <t
+                  tag="li"
+                >
+                  <t
+                    to="#"
+                  >
+                    <t
+                      border={false}
+                      brand={false}
+                      className=""
+                      fab={false}
+                      fal={false}
+                      far={false}
+                      fixed={false}
+                      flip=""
+                      icon="facebook"
+                      inverse=""
+                      light={false}
+                      list={false}
+                      pull=""
+                      pulse={false}
+                      regular={false}
+                      rotate=""
+                      size=""
+                      spin={false}
+                      stack=""
+                    />
+                  </t>
+                </t>
+                <t
+                  tag="li"
+                >
+                  <t
+                    to="#"
+                  >
+                    <t
+                      border={false}
+                      brand={false}
+                      className=""
+                      fab={false}
+                      fal={false}
+                      far={false}
+                      fixed={false}
+                      flip=""
+                      icon="twitter"
+                      inverse=""
+                      light={false}
+                      list={false}
+                      pull=""
+                      pulse={false}
+                      regular={false}
+                      rotate=""
+                      size=""
+                      spin={false}
+                      stack=""
+                    />
+                  </t>
+                </t>
+                <t
+                  tag="li"
+                >
+                  <t
+                    to="#"
+                  >
+                    <t
+                      border={false}
+                      brand={false}
+                      className=""
+                      fab={false}
+                      fal={false}
+                      far={false}
+                      fixed={false}
+                      flip=""
+                      icon="instagram"
+                      inverse=""
+                      light={false}
+                      list={false}
+                      pull=""
+                      pulse={false}
+                      regular={false}
+                      rotate=""
+                      size=""
+                      spin={false}
+                      stack=""
+                    />
+                  </t>
+                </t>
+              </t>
+            </t>,
+          ],
+          "color": "grey darken-3",
+          "dark": true,
+          "expand": "md",
+          "fixed": "top",
+          "scrolling": true,
+          "style": Object {
+            "backgroundColor": "#e91e63",
+          },
+          "tag": "nav",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <strong>
+                FAST FOOD FAST
+              </strong>,
+              "href": "/",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "FAST FOOD FAST",
+              },
+              "ref": null,
+              "rendered": "FAST FOOD FAST",
+              "type": "strong",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "onClick": undefined,
+              "tag": "button",
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <t
+                  left={true}
+                  tag="ul"
+                >
+                  <t
+                    active={true}
+                    tag="li"
+                  >
+                    <t
+                      to="/addmenu"
+                    >
+                      Home
+                    </t>
+                  </t>
+                  <t
+                    tag="li"
+                  >
+                    <t
+                      to="/menu"
+                    >
+                      Menu
+                    </t>
+                  </t>
+                </t>,
+                <t
+                  right={true}
+                  tag="ul"
+                >
+                  <t
+                    tag="li"
+                  >
+                    <t
+                      to="#"
+                    >
+                      <t
+                        border={false}
+                        brand={false}
+                        className=""
+                        fab={false}
+                        fal={false}
+                        far={false}
+                        fixed={false}
+                        flip=""
+                        icon="facebook"
+                        inverse=""
+                        light={false}
+                        list={false}
+                        pull=""
+                        pulse={false}
+                        regular={false}
+                        rotate=""
+                        size=""
+                        spin={false}
+                        stack=""
+                      />
+                    </t>
+                  </t>
+                  <t
+                    tag="li"
+                  >
+                    <t
+                      to="#"
+                    >
+                      <t
+                        border={false}
+                        brand={false}
+                        className=""
+                        fab={false}
+                        fal={false}
+                        far={false}
+                        fixed={false}
+                        flip=""
+                        icon="twitter"
+                        inverse=""
+                        light={false}
+                        list={false}
+                        pull=""
+                        pulse={false}
+                        regular={false}
+                        rotate=""
+                        size=""
+                        spin={false}
+                        stack=""
+                      />
+                    </t>
+                  </t>
+                  <t
+                    tag="li"
+                  >
+                    <t
+                      to="#"
+                    >
+                      <t
+                        border={false}
+                        brand={false}
+                        className=""
+                        fab={false}
+                        fal={false}
+                        far={false}
+                        fixed={false}
+                        flip=""
+                        icon="instagram"
+                        inverse=""
+                        light={false}
+                        list={false}
+                        pull=""
+                        pulse={false}
+                        regular={false}
+                        rotate=""
+                        size=""
+                        spin={false}
+                        stack=""
+                      />
+                    </t>
+                  </t>
+                </t>,
+              ],
+              "delay": Object {
+                "hide": 350,
+                "show": 350,
+              },
+              "isOpen": "",
+              "navbar": true,
+              "onClosed": [Function],
+              "onOpened": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <t
+                      active={true}
+                      tag="li"
+                    >
+                      <t
+                        to="/addmenu"
+                      >
+                        Home
+                      </t>
+                    </t>,
+                    <t
+                      tag="li"
+                    >
+                      <t
+                        to="/menu"
+                      >
+                        Menu
+                      </t>
+                    </t>,
+                  ],
+                  "left": true,
+                  "tag": "ul",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "active": true,
+                      "children": <t
+                        to="/addmenu"
+                      >
+                        Home
+                      </t>,
+                      "tag": "li",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Home",
+                        "to": "/addmenu",
+                      },
+                      "ref": null,
+                      "rendered": "Home",
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <t
+                        to="/menu"
+                      >
+                        Menu
+                      </t>,
+                      "tag": "li",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Menu",
+                        "to": "/menu",
+                      },
+                      "ref": null,
+                      "rendered": "Menu",
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <t
+                      tag="li"
+                    >
+                      <t
+                        to="#"
+                      >
+                        <t
+                          border={false}
+                          brand={false}
+                          className=""
+                          fab={false}
+                          fal={false}
+                          far={false}
+                          fixed={false}
+                          flip=""
+                          icon="facebook"
+                          inverse=""
+                          light={false}
+                          list={false}
+                          pull=""
+                          pulse={false}
+                          regular={false}
+                          rotate=""
+                          size=""
+                          spin={false}
+                          stack=""
+                        />
+                      </t>
+                    </t>,
+                    <t
+                      tag="li"
+                    >
+                      <t
+                        to="#"
+                      >
+                        <t
+                          border={false}
+                          brand={false}
+                          className=""
+                          fab={false}
+                          fal={false}
+                          far={false}
+                          fixed={false}
+                          flip=""
+                          icon="twitter"
+                          inverse=""
+                          light={false}
+                          list={false}
+                          pull=""
+                          pulse={false}
+                          regular={false}
+                          rotate=""
+                          size=""
+                          spin={false}
+                          stack=""
+                        />
+                      </t>
+                    </t>,
+                    <t
+                      tag="li"
+                    >
+                      <t
+                        to="#"
+                      >
+                        <t
+                          border={false}
+                          brand={false}
+                          className=""
+                          fab={false}
+                          fal={false}
+                          far={false}
+                          fixed={false}
+                          flip=""
+                          icon="instagram"
+                          inverse=""
+                          light={false}
+                          list={false}
+                          pull=""
+                          pulse={false}
+                          regular={false}
+                          rotate=""
+                          size=""
+                          spin={false}
+                          stack=""
+                        />
+                      </t>
+                    </t>,
+                  ],
+                  "right": true,
+                  "tag": "ul",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <t
+                        to="#"
+                      >
+                        <t
+                          border={false}
+                          brand={false}
+                          className=""
+                          fab={false}
+                          fal={false}
+                          far={false}
+                          fixed={false}
+                          flip=""
+                          icon="facebook"
+                          inverse=""
+                          light={false}
+                          list={false}
+                          pull=""
+                          pulse={false}
+                          regular={false}
+                          rotate=""
+                          size=""
+                          spin={false}
+                          stack=""
+                        />
+                      </t>,
+                      "tag": "li",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <t
+                          border={false}
+                          brand={false}
+                          className=""
+                          fab={false}
+                          fal={false}
+                          far={false}
+                          fixed={false}
+                          flip=""
+                          icon="facebook"
+                          inverse=""
+                          light={false}
+                          list={false}
+                          pull=""
+                          pulse={false}
+                          regular={false}
+                          rotate=""
+                          size=""
+                          spin={false}
+                          stack=""
+                        />,
+                        "to": "#",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "border": false,
+                          "brand": false,
+                          "className": "",
+                          "fab": false,
+                          "fal": false,
+                          "far": false,
+                          "fixed": false,
+                          "flip": "",
+                          "icon": "facebook",
+                          "inverse": "",
+                          "light": false,
+                          "list": false,
+                          "pull": "",
+                          "pulse": false,
+                          "regular": false,
+                          "rotate": "",
+                          "size": "",
+                          "spin": false,
+                          "stack": "",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <t
+                        to="#"
+                      >
+                        <t
+                          border={false}
+                          brand={false}
+                          className=""
+                          fab={false}
+                          fal={false}
+                          far={false}
+                          fixed={false}
+                          flip=""
+                          icon="twitter"
+                          inverse=""
+                          light={false}
+                          list={false}
+                          pull=""
+                          pulse={false}
+                          regular={false}
+                          rotate=""
+                          size=""
+                          spin={false}
+                          stack=""
+                        />
+                      </t>,
+                      "tag": "li",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <t
+                          border={false}
+                          brand={false}
+                          className=""
+                          fab={false}
+                          fal={false}
+                          far={false}
+                          fixed={false}
+                          flip=""
+                          icon="twitter"
+                          inverse=""
+                          light={false}
+                          list={false}
+                          pull=""
+                          pulse={false}
+                          regular={false}
+                          rotate=""
+                          size=""
+                          spin={false}
+                          stack=""
+                        />,
+                        "to": "#",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "border": false,
+                          "brand": false,
+                          "className": "",
+                          "fab": false,
+                          "fal": false,
+                          "far": false,
+                          "fixed": false,
+                          "flip": "",
+                          "icon": "twitter",
+                          "inverse": "",
+                          "light": false,
+                          "list": false,
+                          "pull": "",
+                          "pulse": false,
+                          "regular": false,
+                          "rotate": "",
+                          "size": "",
+                          "spin": false,
+                          "stack": "",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <t
+                        to="#"
+                      >
+                        <t
+                          border={false}
+                          brand={false}
+                          className=""
+                          fab={false}
+                          fal={false}
+                          far={false}
+                          fixed={false}
+                          flip=""
+                          icon="instagram"
+                          inverse=""
+                          light={false}
+                          list={false}
+                          pull=""
+                          pulse={false}
+                          regular={false}
+                          rotate=""
+                          size=""
+                          spin={false}
+                          stack=""
+                        />
+                      </t>,
+                      "tag": "li",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <t
+                          border={false}
+                          brand={false}
+                          className=""
+                          fab={false}
+                          fal={false}
+                          far={false}
+                          fixed={false}
+                          flip=""
+                          icon="instagram"
+                          inverse=""
+                          light={false}
+                          list={false}
+                          pull=""
+                          pulse={false}
+                          regular={false}
+                          rotate=""
+                          size=""
+                          spin={false}
+                          stack=""
+                        />,
+                        "to": "#",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "border": false,
+                          "brand": false,
+                          "className": "",
+                          "fab": false,
+                          "fal": false,
+                          "far": false,
+                          "fixed": false,
+                          "flip": "",
+                          "icon": "instagram",
+                          "inverse": "",
+                          "light": false,
+                          "list": false,
+                          "pull": "",
+                          "pulse": false,
+                          "regular": false,
+                          "rotate": "",
+                          "size": "",
+                          "spin": false,
+                          "stack": "",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": "header",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <header>
+          <t
+            color="grey darken-3"
+            dark={true}
+            expand="md"
+            fixed="top"
+            scrolling={true}
+            style={
+              Object {
+                "backgroundColor": "#e91e63",
+              }
+            }
+            tag="nav"
+          >
+            <us
+              href="/"
+            >
+              <strong>
+                FAST FOOD FAST
+              </strong>
+            </us>
+            <t
+              tag="button"
+              type="button"
+            />
+            <t
+              delay={
+                Object {
+                  "hide": 350,
+                  "show": 350,
+                }
+              }
+              isOpen=""
+              navbar={true}
+              onClosed={[Function]}
+              onOpened={[Function]}
+            >
+              <t
+                left={true}
+                tag="ul"
+              >
+                <t
+                  active={true}
+                  tag="li"
+                >
+                  <t
+                    to="/addmenu"
+                  >
+                    Home
+                  </t>
+                </t>
+                <t
+                  tag="li"
+                >
+                  <t
+                    to="/menu"
+                  >
+                    Menu
+                  </t>
+                </t>
+              </t>
+              <t
+                right={true}
+                tag="ul"
+              >
+                <t
+                  tag="li"
+                >
+                  <t
+                    to="#"
+                  >
+                    <t
+                      border={false}
+                      brand={false}
+                      className=""
+                      fab={false}
+                      fal={false}
+                      far={false}
+                      fixed={false}
+                      flip=""
+                      icon="facebook"
+                      inverse=""
+                      light={false}
+                      list={false}
+                      pull=""
+                      pulse={false}
+                      regular={false}
+                      rotate=""
+                      size=""
+                      spin={false}
+                      stack=""
+                    />
+                  </t>
+                </t>
+                <t
+                  tag="li"
+                >
+                  <t
+                    to="#"
+                  >
+                    <t
+                      border={false}
+                      brand={false}
+                      className=""
+                      fab={false}
+                      fal={false}
+                      far={false}
+                      fixed={false}
+                      flip=""
+                      icon="twitter"
+                      inverse=""
+                      light={false}
+                      list={false}
+                      pull=""
+                      pulse={false}
+                      regular={false}
+                      rotate=""
+                      size=""
+                      spin={false}
+                      stack=""
+                    />
+                  </t>
+                </t>
+                <t
+                  tag="li"
+                >
+                  <t
+                    to="#"
+                  >
+                    <t
+                      border={false}
+                      brand={false}
+                      className=""
+                      fab={false}
+                      fal={false}
+                      far={false}
+                      fixed={false}
+                      flip=""
+                      icon="instagram"
+                      inverse=""
+                      light={false}
+                      list={false}
+                      pull=""
+                      pulse={false}
+                      regular={false}
+                      rotate=""
+                      size=""
+                      spin={false}
+                      stack=""
+                    />
+                  </t>
+                </t>
+              </t>
+            </t>
+          </t>
+        </header>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <t
+            color="grey darken-3"
+            dark={true}
+            expand="md"
+            fixed="top"
+            scrolling={true}
+            style={
+              Object {
+                "backgroundColor": "#e91e63",
+              }
+            }
+            tag="nav"
+          >
+            <us
+              href="/"
+            >
+              <strong>
+                FAST FOOD FAST
+              </strong>
+            </us>
+            <t
+              tag="button"
+              type="button"
+            />
+            <t
+              delay={
+                Object {
+                  "hide": 350,
+                  "show": 350,
+                }
+              }
+              isOpen=""
+              navbar={true}
+              onClosed={[Function]}
+              onOpened={[Function]}
+            >
+              <t
+                left={true}
+                tag="ul"
+              >
+                <t
+                  active={true}
+                  tag="li"
+                >
+                  <t
+                    to="/addmenu"
+                  >
+                    Home
+                  </t>
+                </t>
+                <t
+                  tag="li"
+                >
+                  <t
+                    to="/menu"
+                  >
+                    Menu
+                  </t>
+                </t>
+              </t>
+              <t
+                right={true}
+                tag="ul"
+              >
+                <t
+                  tag="li"
+                >
+                  <t
+                    to="#"
+                  >
+                    <t
+                      border={false}
+                      brand={false}
+                      className=""
+                      fab={false}
+                      fal={false}
+                      far={false}
+                      fixed={false}
+                      flip=""
+                      icon="facebook"
+                      inverse=""
+                      light={false}
+                      list={false}
+                      pull=""
+                      pulse={false}
+                      regular={false}
+                      rotate=""
+                      size=""
+                      spin={false}
+                      stack=""
+                    />
+                  </t>
+                </t>
+                <t
+                  tag="li"
+                >
+                  <t
+                    to="#"
+                  >
+                    <t
+                      border={false}
+                      brand={false}
+                      className=""
+                      fab={false}
+                      fal={false}
+                      far={false}
+                      fixed={false}
+                      flip=""
+                      icon="twitter"
+                      inverse=""
+                      light={false}
+                      list={false}
+                      pull=""
+                      pulse={false}
+                      regular={false}
+                      rotate=""
+                      size=""
+                      spin={false}
+                      stack=""
+                    />
+                  </t>
+                </t>
+                <t
+                  tag="li"
+                >
+                  <t
+                    to="#"
+                  >
+                    <t
+                      border={false}
+                      brand={false}
+                      className=""
+                      fab={false}
+                      fal={false}
+                      far={false}
+                      fixed={false}
+                      flip=""
+                      icon="instagram"
+                      inverse=""
+                      light={false}
+                      list={false}
+                      pull=""
+                      pulse={false}
+                      regular={false}
+                      rotate=""
+                      size=""
+                      spin={false}
+                      stack=""
+                    />
+                  </t>
+                </t>
+              </t>
+            </t>
+          </t>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <us
+                href="/"
+              >
+                <strong>
+                  FAST FOOD FAST
+                </strong>
+              </us>,
+              <t
+                tag="button"
+                type="button"
+              />,
+              <t
+                delay={
+                  Object {
+                    "hide": 350,
+                    "show": 350,
+                  }
+                }
+                isOpen=""
+                navbar={true}
+                onClosed={[Function]}
+                onOpened={[Function]}
+              >
+                <t
+                  left={true}
+                  tag="ul"
+                >
+                  <t
+                    active={true}
+                    tag="li"
+                  >
+                    <t
+                      to="/addmenu"
+                    >
+                      Home
+                    </t>
+                  </t>
+                  <t
+                    tag="li"
+                  >
+                    <t
+                      to="/menu"
+                    >
+                      Menu
+                    </t>
+                  </t>
+                </t>
+                <t
+                  right={true}
+                  tag="ul"
+                >
+                  <t
+                    tag="li"
+                  >
+                    <t
+                      to="#"
+                    >
+                      <t
+                        border={false}
+                        brand={false}
+                        className=""
+                        fab={false}
+                        fal={false}
+                        far={false}
+                        fixed={false}
+                        flip=""
+                        icon="facebook"
+                        inverse=""
+                        light={false}
+                        list={false}
+                        pull=""
+                        pulse={false}
+                        regular={false}
+                        rotate=""
+                        size=""
+                        spin={false}
+                        stack=""
+                      />
+                    </t>
+                  </t>
+                  <t
+                    tag="li"
+                  >
+                    <t
+                      to="#"
+                    >
+                      <t
+                        border={false}
+                        brand={false}
+                        className=""
+                        fab={false}
+                        fal={false}
+                        far={false}
+                        fixed={false}
+                        flip=""
+                        icon="twitter"
+                        inverse=""
+                        light={false}
+                        list={false}
+                        pull=""
+                        pulse={false}
+                        regular={false}
+                        rotate=""
+                        size=""
+                        spin={false}
+                        stack=""
+                      />
+                    </t>
+                  </t>
+                  <t
+                    tag="li"
+                  >
+                    <t
+                      to="#"
+                    >
+                      <t
+                        border={false}
+                        brand={false}
+                        className=""
+                        fab={false}
+                        fal={false}
+                        far={false}
+                        fixed={false}
+                        flip=""
+                        icon="instagram"
+                        inverse=""
+                        light={false}
+                        list={false}
+                        pull=""
+                        pulse={false}
+                        regular={false}
+                        rotate=""
+                        size=""
+                        spin={false}
+                        stack=""
+                      />
+                    </t>
+                  </t>
+                </t>
+              </t>,
+            ],
+            "color": "grey darken-3",
+            "dark": true,
+            "expand": "md",
+            "fixed": "top",
+            "scrolling": true,
+            "style": Object {
+              "backgroundColor": "#e91e63",
+            },
+            "tag": "nav",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <strong>
+                  FAST FOOD FAST
+                </strong>,
+                "href": "/",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "FAST FOOD FAST",
+                },
+                "ref": null,
+                "rendered": "FAST FOOD FAST",
+                "type": "strong",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "onClick": undefined,
+                "tag": "button",
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <t
+                    left={true}
+                    tag="ul"
+                  >
+                    <t
+                      active={true}
+                      tag="li"
+                    >
+                      <t
+                        to="/addmenu"
+                      >
+                        Home
+                      </t>
+                    </t>
+                    <t
+                      tag="li"
+                    >
+                      <t
+                        to="/menu"
+                      >
+                        Menu
+                      </t>
+                    </t>
+                  </t>,
+                  <t
+                    right={true}
+                    tag="ul"
+                  >
+                    <t
+                      tag="li"
+                    >
+                      <t
+                        to="#"
+                      >
+                        <t
+                          border={false}
+                          brand={false}
+                          className=""
+                          fab={false}
+                          fal={false}
+                          far={false}
+                          fixed={false}
+                          flip=""
+                          icon="facebook"
+                          inverse=""
+                          light={false}
+                          list={false}
+                          pull=""
+                          pulse={false}
+                          regular={false}
+                          rotate=""
+                          size=""
+                          spin={false}
+                          stack=""
+                        />
+                      </t>
+                    </t>
+                    <t
+                      tag="li"
+                    >
+                      <t
+                        to="#"
+                      >
+                        <t
+                          border={false}
+                          brand={false}
+                          className=""
+                          fab={false}
+                          fal={false}
+                          far={false}
+                          fixed={false}
+                          flip=""
+                          icon="twitter"
+                          inverse=""
+                          light={false}
+                          list={false}
+                          pull=""
+                          pulse={false}
+                          regular={false}
+                          rotate=""
+                          size=""
+                          spin={false}
+                          stack=""
+                        />
+                      </t>
+                    </t>
+                    <t
+                      tag="li"
+                    >
+                      <t
+                        to="#"
+                      >
+                        <t
+                          border={false}
+                          brand={false}
+                          className=""
+                          fab={false}
+                          fal={false}
+                          far={false}
+                          fixed={false}
+                          flip=""
+                          icon="instagram"
+                          inverse=""
+                          light={false}
+                          list={false}
+                          pull=""
+                          pulse={false}
+                          regular={false}
+                          rotate=""
+                          size=""
+                          spin={false}
+                          stack=""
+                        />
+                      </t>
+                    </t>
+                  </t>,
+                ],
+                "delay": Object {
+                  "hide": 350,
+                  "show": 350,
+                },
+                "isOpen": "",
+                "navbar": true,
+                "onClosed": [Function],
+                "onOpened": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <t
+                        active={true}
+                        tag="li"
+                      >
+                        <t
+                          to="/addmenu"
+                        >
+                          Home
+                        </t>
+                      </t>,
+                      <t
+                        tag="li"
+                      >
+                        <t
+                          to="/menu"
+                        >
+                          Menu
+                        </t>
+                      </t>,
+                    ],
+                    "left": true,
+                    "tag": "ul",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "active": true,
+                        "children": <t
+                          to="/addmenu"
+                        >
+                          Home
+                        </t>,
+                        "tag": "li",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "Home",
+                          "to": "/addmenu",
+                        },
+                        "ref": null,
+                        "rendered": "Home",
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <t
+                          to="/menu"
+                        >
+                          Menu
+                        </t>,
+                        "tag": "li",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "Menu",
+                          "to": "/menu",
+                        },
+                        "ref": null,
+                        "rendered": "Menu",
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <t
+                        tag="li"
+                      >
+                        <t
+                          to="#"
+                        >
+                          <t
+                            border={false}
+                            brand={false}
+                            className=""
+                            fab={false}
+                            fal={false}
+                            far={false}
+                            fixed={false}
+                            flip=""
+                            icon="facebook"
+                            inverse=""
+                            light={false}
+                            list={false}
+                            pull=""
+                            pulse={false}
+                            regular={false}
+                            rotate=""
+                            size=""
+                            spin={false}
+                            stack=""
+                          />
+                        </t>
+                      </t>,
+                      <t
+                        tag="li"
+                      >
+                        <t
+                          to="#"
+                        >
+                          <t
+                            border={false}
+                            brand={false}
+                            className=""
+                            fab={false}
+                            fal={false}
+                            far={false}
+                            fixed={false}
+                            flip=""
+                            icon="twitter"
+                            inverse=""
+                            light={false}
+                            list={false}
+                            pull=""
+                            pulse={false}
+                            regular={false}
+                            rotate=""
+                            size=""
+                            spin={false}
+                            stack=""
+                          />
+                        </t>
+                      </t>,
+                      <t
+                        tag="li"
+                      >
+                        <t
+                          to="#"
+                        >
+                          <t
+                            border={false}
+                            brand={false}
+                            className=""
+                            fab={false}
+                            fal={false}
+                            far={false}
+                            fixed={false}
+                            flip=""
+                            icon="instagram"
+                            inverse=""
+                            light={false}
+                            list={false}
+                            pull=""
+                            pulse={false}
+                            regular={false}
+                            rotate=""
+                            size=""
+                            spin={false}
+                            stack=""
+                          />
+                        </t>
+                      </t>,
+                    ],
+                    "right": true,
+                    "tag": "ul",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <t
+                          to="#"
+                        >
+                          <t
+                            border={false}
+                            brand={false}
+                            className=""
+                            fab={false}
+                            fal={false}
+                            far={false}
+                            fixed={false}
+                            flip=""
+                            icon="facebook"
+                            inverse=""
+                            light={false}
+                            list={false}
+                            pull=""
+                            pulse={false}
+                            regular={false}
+                            rotate=""
+                            size=""
+                            spin={false}
+                            stack=""
+                          />
+                        </t>,
+                        "tag": "li",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": <t
+                            border={false}
+                            brand={false}
+                            className=""
+                            fab={false}
+                            fal={false}
+                            far={false}
+                            fixed={false}
+                            flip=""
+                            icon="facebook"
+                            inverse=""
+                            light={false}
+                            list={false}
+                            pull=""
+                            pulse={false}
+                            regular={false}
+                            rotate=""
+                            size=""
+                            spin={false}
+                            stack=""
+                          />,
+                          "to": "#",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "border": false,
+                            "brand": false,
+                            "className": "",
+                            "fab": false,
+                            "fal": false,
+                            "far": false,
+                            "fixed": false,
+                            "flip": "",
+                            "icon": "facebook",
+                            "inverse": "",
+                            "light": false,
+                            "list": false,
+                            "pull": "",
+                            "pulse": false,
+                            "regular": false,
+                            "rotate": "",
+                            "size": "",
+                            "spin": false,
+                            "stack": "",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <t
+                          to="#"
+                        >
+                          <t
+                            border={false}
+                            brand={false}
+                            className=""
+                            fab={false}
+                            fal={false}
+                            far={false}
+                            fixed={false}
+                            flip=""
+                            icon="twitter"
+                            inverse=""
+                            light={false}
+                            list={false}
+                            pull=""
+                            pulse={false}
+                            regular={false}
+                            rotate=""
+                            size=""
+                            spin={false}
+                            stack=""
+                          />
+                        </t>,
+                        "tag": "li",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": <t
+                            border={false}
+                            brand={false}
+                            className=""
+                            fab={false}
+                            fal={false}
+                            far={false}
+                            fixed={false}
+                            flip=""
+                            icon="twitter"
+                            inverse=""
+                            light={false}
+                            list={false}
+                            pull=""
+                            pulse={false}
+                            regular={false}
+                            rotate=""
+                            size=""
+                            spin={false}
+                            stack=""
+                          />,
+                          "to": "#",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "border": false,
+                            "brand": false,
+                            "className": "",
+                            "fab": false,
+                            "fal": false,
+                            "far": false,
+                            "fixed": false,
+                            "flip": "",
+                            "icon": "twitter",
+                            "inverse": "",
+                            "light": false,
+                            "list": false,
+                            "pull": "",
+                            "pulse": false,
+                            "regular": false,
+                            "rotate": "",
+                            "size": "",
+                            "spin": false,
+                            "stack": "",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <t
+                          to="#"
+                        >
+                          <t
+                            border={false}
+                            brand={false}
+                            className=""
+                            fab={false}
+                            fal={false}
+                            far={false}
+                            fixed={false}
+                            flip=""
+                            icon="instagram"
+                            inverse=""
+                            light={false}
+                            list={false}
+                            pull=""
+                            pulse={false}
+                            regular={false}
+                            rotate=""
+                            size=""
+                            spin={false}
+                            stack=""
+                          />
+                        </t>,
+                        "tag": "li",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": <t
+                            border={false}
+                            brand={false}
+                            className=""
+                            fab={false}
+                            fal={false}
+                            far={false}
+                            fixed={false}
+                            flip=""
+                            icon="instagram"
+                            inverse=""
+                            light={false}
+                            list={false}
+                            pull=""
+                            pulse={false}
+                            regular={false}
+                            rotate=""
+                            size=""
+                            spin={false}
+                            stack=""
+                          />,
+                          "to": "#",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "border": false,
+                            "brand": false,
+                            "className": "",
+                            "fab": false,
+                            "fal": false,
+                            "far": false,
+                            "fixed": false,
+                            "flip": "",
+                            "icon": "instagram",
+                            "inverse": "",
+                            "light": false,
+                            "list": false,
+                            "pull": "",
+                            "pulse": false,
+                            "regular": false,
+                            "rotate": "",
+                            "size": "",
+                            "spin": false,
+                            "stack": "",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": "header",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Test Navbar Navbar snapshot for Auth 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NavBarAuth
+    onChange={[MockFunction]}
+    onSubmit={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <header>
+        <t
+          color="grey darken-3"
+          dark={true}
+          expand="md"
+          fixed="top"
+          scrolling={true}
+          style={
+            Object {
+              "backgroundColor": "#e91e63",
+            }
+          }
+          tag="nav"
+        >
+          <us
+            href="/"
+          >
+            <strong>
+              FAST FOOD FAST
+            </strong>
+          </us>
+          <t
+            tag="button"
+            type="button"
+          />
+          <t
+            delay={
+              Object {
+                "hide": 350,
+                "show": 350,
+              }
+            }
+            isOpen=""
+            navbar={true}
+            onClosed={[Function]}
+            onOpened={[Function]}
+          >
+            <t
+              left={true}
+              tag="ul"
+            >
+              <t
+                active={true}
+                tag="li"
+              >
+                <t
+                  to="/"
+                >
+                  Login
                 </t>
               </t>
               <t
@@ -249,25 +2553,7 @@ ShallowWrapper {
                 <t
                   to="/"
                 >
-                  Home
-                </t>
-              </t>
-              <t
-                tag="li"
-              >
-                <t
-                  to="/menu"
-                >
-                  Menu
-                </t>
-              </t>
-              <t
-                tag="li"
-              >
-                <t
-                  to="/addmenu"
-                >
-                  Add Menu
+                  Login
                 </t>
               </t>
               <t
@@ -416,25 +2702,7 @@ ShallowWrapper {
                   <t
                     to="/"
                   >
-                    Home
-                  </t>
-                </t>
-                <t
-                  tag="li"
-                >
-                  <t
-                    to="/menu"
-                  >
-                    Menu
-                  </t>
-                </t>
-                <t
-                  tag="li"
-                >
-                  <t
-                    to="/addmenu"
-                  >
-                    Add Menu
+                    Login
                   </t>
                 </t>
                 <t
@@ -607,25 +2875,7 @@ ShallowWrapper {
                     <t
                       to="/"
                     >
-                      Home
-                    </t>
-                  </t>
-                  <t
-                    tag="li"
-                  >
-                    <t
-                      to="/menu"
-                    >
-                      Menu
-                    </t>
-                  </t>
-                  <t
-                    tag="li"
-                  >
-                    <t
-                      to="/addmenu"
-                    >
-                      Add Menu
+                      Login
                     </t>
                   </t>
                   <t
@@ -755,25 +3005,7 @@ ShallowWrapper {
                       <t
                         to="/"
                       >
-                        Home
-                      </t>
-                    </t>,
-                    <t
-                      tag="li"
-                    >
-                      <t
-                        to="/menu"
-                      >
-                        Menu
-                      </t>
-                    </t>,
-                    <t
-                      tag="li"
-                    >
-                      <t
-                        to="/addmenu"
-                      >
-                        Add Menu
+                        Login
                       </t>
                     </t>,
                     <t
@@ -800,7 +3032,7 @@ ShallowWrapper {
                       "children": <t
                         to="/"
                       >
-                        Home
+                        Login
                       </t>,
                       "tag": "li",
                     },
@@ -810,65 +3042,11 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "class",
                       "props": Object {
-                        "children": "Home",
+                        "children": "Login",
                         "to": "/",
                       },
                       "ref": null,
-                      "rendered": "Home",
-                      "type": [Function],
-                    },
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": <t
-                        to="/menu"
-                      >
-                        Menu
-                      </t>,
-                      "tag": "li",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "children": "Menu",
-                        "to": "/menu",
-                      },
-                      "ref": null,
-                      "rendered": "Menu",
-                      "type": [Function],
-                    },
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": <t
-                        to="/addmenu"
-                      >
-                        Add Menu
-                      </t>,
-                      "tag": "li",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "children": "Add Menu",
-                        "to": "/addmenu",
-                      },
-                      "ref": null,
-                      "rendered": "Add Menu",
+                      "rendered": "Login",
                       "type": [Function],
                     },
                     "type": [Function],
@@ -1354,25 +3532,7 @@ ShallowWrapper {
                   <t
                     to="/"
                   >
-                    Home
-                  </t>
-                </t>
-                <t
-                  tag="li"
-                >
-                  <t
-                    to="/menu"
-                  >
-                    Menu
-                  </t>
-                </t>
-                <t
-                  tag="li"
-                >
-                  <t
-                    to="/addmenu"
-                  >
-                    Add Menu
+                    Login
                   </t>
                 </t>
                 <t
@@ -1534,25 +3694,7 @@ ShallowWrapper {
                   <t
                     to="/"
                   >
-                    Home
-                  </t>
-                </t>
-                <t
-                  tag="li"
-                >
-                  <t
-                    to="/menu"
-                  >
-                    Menu
-                  </t>
-                </t>
-                <t
-                  tag="li"
-                >
-                  <t
-                    to="/addmenu"
-                  >
-                    Add Menu
+                    Login
                   </t>
                 </t>
                 <t
@@ -1701,25 +3843,7 @@ ShallowWrapper {
                     <t
                       to="/"
                     >
-                      Home
-                    </t>
-                  </t>
-                  <t
-                    tag="li"
-                  >
-                    <t
-                      to="/menu"
-                    >
-                      Menu
-                    </t>
-                  </t>
-                  <t
-                    tag="li"
-                  >
-                    <t
-                      to="/addmenu"
-                    >
-                      Add Menu
+                      Login
                     </t>
                   </t>
                   <t
@@ -1892,25 +4016,7 @@ ShallowWrapper {
                       <t
                         to="/"
                       >
-                        Home
-                      </t>
-                    </t>
-                    <t
-                      tag="li"
-                    >
-                      <t
-                        to="/menu"
-                      >
-                        Menu
-                      </t>
-                    </t>
-                    <t
-                      tag="li"
-                    >
-                      <t
-                        to="/addmenu"
-                      >
-                        Add Menu
+                        Login
                       </t>
                     </t>
                     <t
@@ -2040,25 +4146,7 @@ ShallowWrapper {
                         <t
                           to="/"
                         >
-                          Home
-                        </t>
-                      </t>,
-                      <t
-                        tag="li"
-                      >
-                        <t
-                          to="/menu"
-                        >
-                          Menu
-                        </t>
-                      </t>,
-                      <t
-                        tag="li"
-                      >
-                        <t
-                          to="/addmenu"
-                        >
-                          Add Menu
+                          Login
                         </t>
                       </t>,
                       <t
@@ -2085,7 +4173,7 @@ ShallowWrapper {
                         "children": <t
                           to="/"
                         >
-                          Home
+                          Login
                         </t>,
                         "tag": "li",
                       },
@@ -2095,65 +4183,11 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "class",
                         "props": Object {
-                          "children": "Home",
+                          "children": "Login",
                           "to": "/",
                         },
                         "ref": null,
-                        "rendered": "Home",
-                        "type": [Function],
-                      },
-                      "type": [Function],
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "children": <t
-                          to="/menu"
-                        >
-                          Menu
-                        </t>,
-                        "tag": "li",
-                      },
-                      "ref": null,
-                      "rendered": Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "class",
-                        "props": Object {
-                          "children": "Menu",
-                          "to": "/menu",
-                        },
-                        "ref": null,
-                        "rendered": "Menu",
-                        "type": [Function],
-                      },
-                      "type": [Function],
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "children": <t
-                          to="/addmenu"
-                        >
-                          Add Menu
-                        </t>,
-                        "tag": "li",
-                      },
-                      "ref": null,
-                      "rendered": Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "class",
-                        "props": Object {
-                          "children": "Add Menu",
-                          "to": "/addmenu",
-                        },
-                        "ref": null,
-                        "rendered": "Add Menu",
+                        "rendered": "Login",
                         "type": [Function],
                       },
                       "type": [Function],

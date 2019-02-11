@@ -22,7 +22,12 @@ describe('Test LogIn', () => {
 
   it('test handle onsubmit event', () => {
     wrapper.instance().onSubmit({ preventDefault() {} });
-    expect(wrapper.state()).toEqual({ email: '', password: '', role: 'user' });
+    expect(wrapper.state()).toEqual({
+      collapse: false,
+      email: '',
+      password: '',
+      role: 'user'
+    });
   });
 
   it('should handle onchange function', () => {
@@ -30,5 +35,14 @@ describe('Test LogIn', () => {
       .instance()
       .onChange({ target: { name: 'email', value: 'kasule@andela.com' } });
     expect(wrapper.state('email')).toEqual('kasule@andela.com');
+  });
+  it('test handle onclick event for nav bar auth', () => {
+    wrapper.instance().onClick({ preventDefault() {} });
+    expect(wrapper.state()).toEqual({
+      collapse: true,
+      email: '',
+      password: '',
+      role: 'user'
+    });
   });
 });

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1549730968490" clover="3.2.0">
-  <project timestamp="1549730968490" name="All files">
-    <metrics statements="92" coveredstatements="85" conditionals="17" coveredconditionals="13" methods="34" coveredmethods="34" elements="143" coveredelements="132" complexity="0" loc="92" ncloc="92" packages="12" files="15" classes="15">
+<coverage generated="1549899040876" clover="3.2.0">
+  <project timestamp="1549899040876" name="All files">
+    <metrics statements="106" coveredstatements="98" conditionals="17" coveredconditionals="13" methods="41" coveredmethods="40" elements="164" coveredelements="151" complexity="0" loc="106" ncloc="106" packages="12" files="17" classes="17">
       <package name="src">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <file name="App.js" path="/Users/kasule/Desktop/fast-food-fast-frontend/src/App.js">
@@ -66,10 +66,16 @@
         </file>
       </package>
       <package name="src.components.NavBar">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <file name="NavBarAuth.jsx" path="/Users/kasule/Desktop/fast-food-fast-frontend/src/components/NavBar/NavBarAuth.jsx">
+          <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="5" count="5" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="7" count="2" type="stmt"/>
+        </file>
         <file name="Navbar.jsx" path="/Users/kasule/Desktop/fast-food-fast-frontend/src/components/NavBar/Navbar.jsx">
           <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-          <line num="5" count="3" type="stmt"/>
+          <line num="5" count="4" type="stmt"/>
           <line num="6" count="2" type="stmt"/>
           <line num="7" count="2" type="stmt"/>
         </file>
@@ -91,61 +97,75 @@
         </file>
       </package>
       <package name="src.container.Login">
-        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
         <file name="Login.jsx" path="/Users/kasule/Desktop/fast-food-fast-frontend/src/container/Login/Login.jsx">
-          <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-          <line num="7" count="4" type="stmt"/>
-          <line num="8" count="4" type="stmt"/>
-          <line num="13" count="4" type="stmt"/>
-          <line num="14" count="4" type="stmt"/>
-          <line num="18" count="1" type="stmt"/>
-          <line num="21" count="1" type="stmt"/>
-          <line num="22" count="1" type="stmt"/>
-          <line num="27" count="1" type="stmt"/>
-          <line num="28" count="1" type="stmt"/>
-          <line num="32" count="5" type="stmt"/>
+          <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+          <line num="9" count="5" type="stmt"/>
+          <line num="10" count="5" type="stmt"/>
+          <line num="16" count="5" type="stmt"/>
+          <line num="17" count="5" type="stmt"/>
+          <line num="18" count="5" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
+          <line num="26" count="1" type="stmt"/>
+          <line num="31" count="1" type="stmt"/>
+          <line num="32" count="1" type="stmt"/>
+          <line num="37" count="1" type="stmt"/>
+          <line num="38" count="1" type="stmt"/>
+          <line num="42" count="7" type="stmt"/>
         </file>
       </package>
       <package name="src.container.Menu">
-        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <metrics statements="11" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4"/>
         <file name="Menu.js" path="/Users/kasule/Desktop/fast-food-fast-frontend/src/container/Menu/Menu.js">
-          <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-          <line num="7" count="3" type="stmt"/>
-          <line num="8" count="3" type="stmt"/>
-          <line num="14" count="3" type="stmt"/>
-          <line num="15" count="3" type="stmt"/>
-          <line num="18" count="1" type="stmt"/>
-          <line num="21" count="1" type="stmt"/>
-          <line num="22" count="1" type="stmt"/>
-          <line num="28" count="1" type="stmt"/>
-          <line num="31" count="4" type="stmt"/>
+          <metrics statements="11" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4"/>
+          <line num="11" count="3" type="stmt"/>
+          <line num="12" count="3" type="stmt"/>
+          <line num="19" count="3" type="stmt"/>
+          <line num="20" count="3" type="stmt"/>
+          <line num="21" count="3" type="stmt"/>
+          <line num="25" count="1" type="stmt"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="33" count="1" type="stmt"/>
+          <line num="34" count="1" type="stmt"/>
+          <line num="40" count="1" type="stmt"/>
+          <line num="43" count="4" type="stmt"/>
         </file>
       </package>
       <package name="src.container.NavBar">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
         <file name="NavBar.js" path="/Users/kasule/Desktop/fast-food-fast-frontend/src/container/NavBar/NavBar.js">
           <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-          <line num="5" count="3" type="stmt"/>
-          <line num="6" count="3" type="stmt"/>
-          <line num="9" count="3" type="stmt"/>
+          <line num="5" count="4" type="stmt"/>
+          <line num="6" count="4" type="stmt"/>
+          <line num="9" count="4" type="stmt"/>
           <line num="13" count="1" type="stmt"/>
-          <line num="19" count="4" type="stmt"/>
+          <line num="19" count="5" type="stmt"/>
+        </file>
+        <file name="NavBarAuth.js" path="/Users/kasule/Desktop/fast-food-fast-frontend/src/container/NavBar/NavBarAuth.js">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="9" count="2" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="19" count="3" type="stmt"/>
         </file>
       </package>
       <package name="src.container.Signup">
-        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
         <file name="Signup.js" path="/Users/kasule/Desktop/fast-food-fast-frontend/src/container/Signup/Signup.js">
-          <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-          <line num="8" count="3" type="stmt"/>
-          <line num="9" count="3" type="stmt"/>
-          <line num="16" count="3" type="stmt"/>
-          <line num="17" count="3" type="stmt"/>
-          <line num="20" count="1" type="stmt"/>
-          <line num="23" count="1" type="stmt"/>
+          <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+          <line num="9" count="4" type="stmt"/>
+          <line num="10" count="4" type="stmt"/>
+          <line num="18" count="4" type="stmt"/>
+          <line num="19" count="4" type="stmt"/>
+          <line num="20" count="4" type="stmt"/>
           <line num="24" count="1" type="stmt"/>
-          <line num="31" count="1" type="stmt"/>
+          <line num="27" count="1" type="stmt"/>
           <line num="32" count="1" type="stmt"/>
-          <line num="35" count="4" type="stmt"/>
+          <line num="33" count="1" type="stmt"/>
+          <line num="40" count="1" type="stmt"/>
+          <line num="41" count="1" type="stmt"/>
+          <line num="44" count="6" type="stmt"/>
         </file>
       </package>
       <package name="src.reducer">
