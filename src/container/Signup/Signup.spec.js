@@ -27,7 +27,8 @@ describe('Test SignUp', () => {
       location: '',
       password: '',
       role: 'user',
-      username: ''
+      username: '',
+      collapse: false
     });
   });
 
@@ -36,5 +37,16 @@ describe('Test SignUp', () => {
       .instance()
       .onChange({ target: { name: 'email', value: 'kasule@andela.com' } });
     expect(wrapper.state('email')).toEqual('kasule@andela.com');
+  });
+  it('test handle onclick event for nav bar auth', () => {
+    wrapper.instance().onClick({ preventDefault() {} });
+    expect(wrapper.state()).toEqual({
+      collapse: true,
+      email: '',
+      location: '',
+      password: '',
+      role: 'user',
+      username: ''
+    });
   });
 });

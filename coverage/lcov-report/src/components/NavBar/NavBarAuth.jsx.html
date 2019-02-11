@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/container/Login/Login.jsx</title>
+    <title>Code coverage report for src/components/NavBar/NavBarAuth.jsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -16,13 +16,13 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../../index.html">All files</a> / <a href="index.html">src/container/Login</a> Login.jsx
+      <a href="../../../index.html">All files</a> / <a href="index.html">src/components/NavBar</a> NavBarAuth.jsx
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>12/12</span>
+        <span class='fraction'>3/3</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -32,12 +32,12 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>5/5</span>
+        <span class='fraction'>1/1</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>12/12</span>
+        <span class='fraction'>3/3</span>
       </div>
     </div>
   </div>
@@ -85,60 +85,36 @@
 40
 41
 42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+43</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -152,60 +128,48 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
-import { connect } from 'react-redux';
-import { loginAction } from '../../actions/feactAction';
-import LoginForm from '../../components/LoginForm/LoginForm';
-import NavBarAuth from '../../components/NavBar/NavBarAuth';
+import {MDBNavbar, NavLink, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBIcon } from 'mdbreact';
 &nbsp;
-export class LogIn extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: '',
-      password: '',
-      role: 'user',
-      collapse: false,
-    };
-    this.onChange = this.onChange.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
-    this.onClick = this.onClick.bind(this);
 &nbsp;
-  }
-&nbsp;
-  onChange(e) {
-    this.setState({ [e.target.name]: e.target.value });
-  }
-  onClick() {
-    this.setState({
-        collapse: !this.state.collapse,
-      });
-  }
-  onSubmit(e) {
-    e.preventDefault();
-    const user = {
-      username: this.state.username,
-      password: this.state.password,
-      role: this.state.role,
-    };
-    const { history } = this.props;
-    this.props.loginAction(user, history);
-  }
-&nbsp;
-  render() {
+const NavBarAuth = ({onClick, isOpen}) =&gt; {
+    const bgPink = {backgroundColor: '#e91e63'}
     return (
-      &lt;&gt;
-      &lt;NavBarAuth onClick={this.onClick} isOpen ={this.state.collapse}/&gt;,
-      &lt;LoginForm onChange={this.onChange} onSubmit={this.onSubmit} /&gt;
-      &lt;/&gt;
+        &lt;div &gt;
+          &lt;header&gt;
+            &lt;MDBNavbar style={bgPink} color="grey darken-3"  dark expand="md" scrolling fixed="top"&gt;
+              &lt;MDBNavbarBrand href="/"&gt;
+                  &lt;strong&gt;FAST FOOD FAST&lt;/strong&gt;
+              &lt;/MDBNavbarBrand&gt;
+              &lt;MDBNavbarToggler onClick={onClick } /&gt;
+              &lt;MDBCollapse isOpen = { isOpen } navbar&gt;
+                &lt;MDBNavbarNav left&gt;
+                  &lt;MDBNavItem active&gt;
+                      &lt;NavLink to="/"&gt;Login&lt;/NavLink&gt;
+                  &lt;/MDBNavItem&gt;
+                  &lt;MDBNavItem&gt;
+                    &lt;NavLink to="/signup"&gt;Signup&lt;/NavLink&gt;
+                  &lt;/MDBNavItem&gt;
+                &lt;/MDBNavbarNav&gt;
+                &lt;MDBNavbarNav right&gt;
+                  &lt;MDBNavItem&gt;
+                    &lt;NavLink to="#"&gt;&lt;MDBIcon icon="facebook" /&gt;&lt;/NavLink&gt;
+                  &lt;/MDBNavItem&gt;
+                  &lt;MDBNavItem&gt;
+                    &lt;NavLink to="#"&gt;&lt;MDBIcon icon="twitter" /&gt;&lt;/NavLink&gt;
+                  &lt;/MDBNavItem&gt;
+                  &lt;MDBNavItem&gt;
+                    &lt;NavLink to="#"&gt;&lt;MDBIcon icon="instagram" /&gt;&lt;/NavLink&gt;
+                  &lt;/MDBNavItem&gt;
+                &lt;/MDBNavbarNav&gt;
+              &lt;/MDBCollapse&gt;
+            &lt;/MDBNavbar&gt;
+          &lt;/header&gt;
+      &lt;/div&gt;
     );
-  }
-}
+};
 &nbsp;
-export default connect(
-  null,
-  { loginAction }
-)(LogIn);
-&nbsp;</pre></td></tr>
+&nbsp;
+export default NavBarAuth;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
