@@ -23,6 +23,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Navbar
+          active="false"
           isOpen={false}
           onClick={[Function]}
         />,
@@ -40,6 +41,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "active": "false",
           "isOpen": false,
           "onClick": [Function],
         },
@@ -71,6 +73,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Navbar
+            active="false"
             isOpen={false}
             onClick={[Function]}
           />,
@@ -88,6 +91,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "active": "false",
             "isOpen": false,
             "onClick": [Function],
           },

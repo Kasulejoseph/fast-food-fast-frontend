@@ -15,6 +15,7 @@ export class Postmenu extends React.Component {
             price: '',
             image: '',
             collapse: false,
+            active: 'false'
         };
         this.onChange = this.onChange.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
@@ -27,6 +28,7 @@ export class Postmenu extends React.Component {
     onClick() {
         this.setState({
             collapse: !this.state.collapse,
+            active: 'active'
           });
       }
     onSubmit(e){
@@ -42,7 +44,7 @@ export class Postmenu extends React.Component {
     render() {
         return (
             <>
-            <Navbar onClick={this.onClick} isOpen ={this.state.collapse}/>,
+            <Navbar onClick={this.onClick} isOpen ={this.state.collapse} active={this.state.active}/>,
           <PostForm onChange={this.onChange} onSubmit={this.onSubmit}/>  
           </>      
         );

@@ -23,6 +23,7 @@ describe('Test SignUp', () => {
   it('test handle onsubmit event', () => {
     wrapper.instance().onSubmit({ preventDefault() {} });
     expect(wrapper.state()).toEqual({
+      active2: "de-active",
       email: '',
       location: '',
       password: '',
@@ -41,6 +42,7 @@ describe('Test SignUp', () => {
   it('test handle onclick event for nav bar auth', () => {
     wrapper.instance().onClick({ preventDefault() {} });
     expect(wrapper.state()).toEqual({
+      active2: "active",
       collapse: true,
       email: '',
       location: '',

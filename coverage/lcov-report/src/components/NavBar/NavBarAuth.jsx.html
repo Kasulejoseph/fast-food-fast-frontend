@@ -85,7 +85,36 @@
 40
 41
 42
-43</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -127,55 +156,89 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
-import {MDBNavbar, NavLink, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBIcon } from 'mdbreact';
+import {
+  MDBNavbar,
+  NavLink,
+  MDBNavbarBrand,
+  MDBNavbarNav,
+  MDBNavbarToggler,
+  MDBCollapse,
+  MDBNavItem,
+  MDBIcon
+} from 'mdbreact';
 &nbsp;
-&nbsp;
-const NavBarAuth = ({onClick, isOpen}) =&gt; {
-    const bgPink = {backgroundColor: '#e91e63'}
-    return (
-        &lt;div &gt;
-          &lt;header&gt;
-            &lt;MDBNavbar style={bgPink} color="grey darken-3"  dark expand="md" scrolling fixed="top"&gt;
-              &lt;MDBNavbarBrand href="/"&gt;
-                  &lt;strong&gt;FAST FOOD FAST&lt;/strong&gt;
-              &lt;/MDBNavbarBrand&gt;
-              &lt;MDBNavbarToggler onClick={onClick } /&gt;
-              &lt;MDBCollapse isOpen = { isOpen } navbar&gt;
-                &lt;MDBNavbarNav left&gt;
-                  &lt;MDBNavItem active&gt;
-                      &lt;NavLink to="/"&gt;Login&lt;/NavLink&gt;
-                  &lt;/MDBNavItem&gt;
-                  &lt;MDBNavItem&gt;
-                    &lt;NavLink to="/signup"&gt;Signup&lt;/NavLink&gt;
-                  &lt;/MDBNavItem&gt;
-                &lt;/MDBNavbarNav&gt;
-                &lt;MDBNavbarNav right&gt;
-                  &lt;MDBNavItem&gt;
-                    &lt;NavLink to="#"&gt;&lt;MDBIcon icon="facebook" /&gt;&lt;/NavLink&gt;
-                  &lt;/MDBNavItem&gt;
-                  &lt;MDBNavItem&gt;
-                    &lt;NavLink to="#"&gt;&lt;MDBIcon icon="twitter" /&gt;&lt;/NavLink&gt;
-                  &lt;/MDBNavItem&gt;
-                  &lt;MDBNavItem&gt;
-                    &lt;NavLink to="#"&gt;&lt;MDBIcon icon="instagram" /&gt;&lt;/NavLink&gt;
-                  &lt;/MDBNavItem&gt;
-                &lt;/MDBNavbarNav&gt;
-              &lt;/MDBCollapse&gt;
-            &lt;/MDBNavbar&gt;
-          &lt;/header&gt;
-      &lt;/div&gt;
-    );
+const NavBarAuth = ({ onClick, isOpen, active, active2 }) =&gt; {
+  const bgPink = { backgroundColor: '#e91e63' };
+  return (
+    &lt;div&gt;
+      &lt;header&gt;
+        &lt;MDBNavbar
+          style={bgPink}
+          color="grey darken-3"
+          dark
+          expand="md"
+          scrolling
+          fixed="top"
+        &gt;
+          &lt;MDBNavbarBrand href="/"&gt;
+            &lt;strong&gt;FAST FOOD FAST&lt;/strong&gt;
+          &lt;/MDBNavbarBrand&gt;
+          &lt;MDBNavbarToggler onClick={onClick} /&gt;
+          &lt;MDBCollapse isOpen={isOpen} navbar&gt;
+            &lt;MDBNavbarNav left&gt;
+              &lt;MDBNavItem active={active}&gt;
+                &lt;NavLink to="/"&gt;Login&lt;/NavLink&gt;
+              &lt;/MDBNavItem&gt;
+              &lt;MDBNavItem active={active2}&gt;
+                &lt;NavLink to="/signup"&gt;Signup&lt;/NavLink&gt;
+              &lt;/MDBNavItem&gt;
+            &lt;/MDBNavbarNav&gt;
+            &lt;MDBNavbarNav right&gt;
+              &lt;MDBNavItem&gt;
+                &lt;NavLink to="#"&gt;
+                  &lt;MDBIcon icon="facebook" /&gt;
+                &lt;/NavLink&gt;
+              &lt;/MDBNavItem&gt;
+              &lt;MDBNavItem&gt;
+                &lt;NavLink to="#"&gt;
+                  &lt;MDBIcon icon="twitter" /&gt;
+                &lt;/NavLink&gt;
+              &lt;/MDBNavItem&gt;
+              &lt;MDBNavItem&gt;
+                &lt;NavLink to="#"&gt;
+                  &lt;MDBIcon icon="instagram" /&gt;
+                &lt;/NavLink&gt;
+              &lt;/MDBNavItem&gt;
+            &lt;/MDBNavbarNav&gt;
+          &lt;/MDBCollapse&gt;
+        &lt;/MDBNavbar&gt;
+      &lt;/header&gt;
+    &lt;/div&gt;
+  );
 };
 &nbsp;
-&nbsp;
-export default NavBarAuth;</pre></td></tr>
+export default NavBarAuth;
+&nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Feb 11 2019 18:30:40 GMT+0300 (East Africa Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Feb 12 2019 17:44:51 GMT+0300 (East Africa Time)
 </div>
 </div>
 <script src="../../../prettify.js"></script>

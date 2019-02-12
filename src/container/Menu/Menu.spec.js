@@ -22,6 +22,7 @@ describe('Test Postmenu', () => {
   it('test handle onsubmit event', () => {
     wrapper.instance().onSubmit({ preventDefault() {} });
     expect(wrapper.state()).toEqual({
+      active: "false",
       collapse: false,
       description: '',
       image: '',

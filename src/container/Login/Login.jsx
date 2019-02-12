@@ -12,6 +12,7 @@ export class LogIn extends React.Component {
       password: '',
       role: 'user',
       collapse: false,
+      active: 'active'
     };
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
@@ -24,8 +25,9 @@ export class LogIn extends React.Component {
   }
   onClick() {
     this.setState({
-        collapse: !this.state.collapse,
+        collapse: !this.state.collapse, active: 'de-active'
       });
+
   }
   onSubmit(e) {
     e.preventDefault();
@@ -41,7 +43,7 @@ export class LogIn extends React.Component {
   render() {
     return (
       <>
-      <NavBarAuth onClick={this.onClick} isOpen ={this.state.collapse}/>,
+      <NavBarAuth onClick={this.onClick} isOpen ={this.state.collapse} active={this.state.active}/>,
       <LoginForm onChange={this.onChange} onSubmit={this.onSubmit} />
       </>
     );
